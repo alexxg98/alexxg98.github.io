@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Alexandria's Portfolio</title>
@@ -19,38 +19,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<!--Navigation Bar-->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:black;">
-    <a class="navbar-brand" href="#">Alexandria Guo</a>
-    <!--collapse navbar on small screens-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-link"><a class="nav-link" href="#">Home</a></li>
-      </ul>
-    </div>
-  </nav>
+<body>
+  <!-- Side Navbar -->
+  <div class="sidenav">
+    <a href="#">
+      <center> <img src="images/logoW.png" id="nav_logo"> </center>
+    </a>
+    <a href="index.html">Home</a>
+    <a href="#about">About Me</a>
+  </div> <!-- End of Side Navbar -->
 
-<!--Index Section-->
+  <!--Index Section-->
   <div class="index-container">
     <div class="logo-container">
-      <img src="images/logoW.png" alt="logo" id="logoImage">
+      <img src="images/logoW.png" alt="logo" id="index_logo">
     </div>
     <div id="introText">
-        <h1 id="introName"> Hi! I'm Alexandria. </h1>
-        <p> I am a web developer with a passion for design, front-end development, and how I can combine the two to create something that is useful and appealing. </p>
-        <!-- Overlay container to mimic text sliding -->
-        <div id="fading-effect"></div>
+      <h1 id="introName"> Hi! I'm Alexandria. </h1>
+      <p> I am a web developer with a passion for design, front-end development, and how I can combine the two to create something that is useful and appealing. </p>
+      <!-- Overlay container to mimic text sliding -->
+      <div id="fading-effect"></div>
     </div>
-  </div>
+  </div> <!--End of Index Section-->
   <div id="downArrow">
     <a href="#about"> <img src="images/downArrow.png"> </a>
   </div>
 
-
-<script src="js/index.js"></script>
+<script src="js/index.js"> </script>
 </body>
 </html>

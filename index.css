@@ -11,6 +11,39 @@ img{
   height: 100%;
 }
 
+/* Navbar */
+#nav_logo{
+  width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 3; /*Makes sure the fading-effect box doesn't show ontop*/
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 26px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 /* Index Section */
 .index-container{
   box-sizing: border-box;
@@ -27,7 +60,7 @@ img{
   height: auto;
   z-index: 2;
 }
-#logoImage{
+#index_logo{
   height: 60vh;
   width: auto;
   transition: transform 1.5s ease-out;
@@ -35,7 +68,7 @@ img{
   display:block
 }
 
-.index-container:hover #logoImage{
+.index-container:hover #index_logo{
   transform: translateX(-50%);
 }
 
