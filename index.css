@@ -11,29 +11,32 @@ img{
   height: 100%;
 }
 
+/* Index Section */
 .index-container{
   box-sizing: border-box;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   position: relative;
-  padding-top: 7vh;
-  display: block;
+  /* border: solid red 2px; */
 }
 
 .logo-container{
   position: absolute;
   top: 15%;
-  left: 40%;
+  width: 100%;
+  height: auto;
   z-index: 2;
 }
-.logo-container img{
+#logoImage{
   height: 60vh;
   width: auto;
-  transition: transform 2s ease-out;
+  transition: transform 1.5s ease-out;
+  margin: auto;
+  display:block
 }
 
-.index-container:hover img{
-  transform: translateX(-250px);
+.index-container:hover #logoImage{
+  transform: translateX(-50%);
 }
 
 #introText {
@@ -43,7 +46,7 @@ img{
   transform: translate(-50%,-50%);
   z-index: 1;
   color: white;
-  width: 30%;
+  width: 35%;
 }
 #introName {
   font-family: 'Lato', sans-serif;
@@ -61,7 +64,16 @@ img{
   width: 100%;
   background: #691F2B;
   transition: transform 1.5s linear;
+  /* border: solid red 2px; */
 }
 .index-container:hover #fading-effect{
-  transform: translateX(-500px);
+  transform: translateX(-100%);
+}
+
+#downArrow{
+  width:2em;
+  height:auto;
+  margin: auto;
+  margin-top: 2%;
+  display: block;
 }
