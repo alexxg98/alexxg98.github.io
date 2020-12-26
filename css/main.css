@@ -1,18 +1,17 @@
-body{
-  font-family: 'Karla', sans-serif;
+body {
+  font-family: "Karla", sans-serif;
   font-weight: 400;
-  /* background-color: #691F2B; */
   font-size: 1em;
   position: relative;
 }
 
-img{
+img {
   width: 100%;
   height: 100%;
 }
 
 /* Navbar */
-#nav_logo{
+#nav_logo {
   width: 70%;
   height: auto;
   margin-bottom: 20px;
@@ -22,7 +21,8 @@ img{
   height: 100%;
   width: 150px;
   position: fixed;
-  z-index: 3; /*Makes sure the fading-effect box doesn't show ontop*/
+  z-index: 3;
+  /*Makes sure the fading-effect box doesn't show ontop*/
   top: 0;
   left: 0;
   background-color: #691F2B;
@@ -34,7 +34,7 @@ img{
 .sidenav a {
   padding: 6px 8px 6px 26px;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.2em;
   color: white;
@@ -47,52 +47,47 @@ img{
 }
 
 /* Index Section */
-.index-container{
+.index-container {
   box-sizing: border-box;
   width: 100%;
   height: 85vh;
   position: relative;
-  /* background-image: url("images/background.jpg"); */
-  /* border: solid red 2px; */
 }
 
-.logo-container{
+.logo-container {
   position: absolute;
   top: 15%;
   width: 100%;
   height: auto;
   z-index: 2;
 }
-#index_logo{
+
+#index_logo {
   height: 60vh;
   width: auto;
   transition: transform 1.5s ease-out;
   margin: auto;
-  display:block
-}
-
-.index-container:hover #index_logo{
-  transform: translateX(-50%);
+  display: block;
 }
 
 #introText {
   position: absolute;
   top: 50%;
   left: 60%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 1;
-  /* color: white; */
   width: 35%;
 }
+
 #introName {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-bottom: 30px;
 }
 
-#fading-effect{
+#fading-effect {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -102,19 +97,23 @@ img{
   transition: transform 1.5s linear;
   /* border: solid red 2px; */
 }
-.index-container:hover #fading-effect{
+
+.index-container:hover #fading-effect {
   transform: translateX(-100%);
 }
+.index-container:hover #index_logo {
+  transform: translateX(-50%);
+}
 
-#downArrow{
-  width:2em;
-  height:auto;
+#downArrow {
+  width: 2em;
+  height: auto;
   margin: auto;
   margin-top: 2%;
   display: block;
 }
 
-#copyrightBar{
+#copyrightBar {
   bottom: 10px;
   position: absolute;
   color: white;
@@ -123,5 +122,7 @@ img{
   padding: 6px 8px 6px 12px;
   display: block;
   width: 100%;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
+
+/*# sourceMappingURL=main.css.map */
