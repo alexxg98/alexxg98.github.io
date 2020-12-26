@@ -1,0 +1,48 @@
+@import 'variables';
+
+/* Navbar */
+#nav_logo{
+  width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 3; /*Makes sure the fading-effect box doesn't show ontop*/
+  top: 0;
+  left: 0;
+  background-color: $primary-color;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+
+  a {
+    padding: 6px 8px 6px 26px;
+    text-decoration: none;
+    font-family: $heading-font;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: white;
+    display: block;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+#copyrightBar{
+  bottom: 10px;
+  position: absolute;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 6px 8px 6px 12px;
+  display: block;
+  width: 100%;
+  font-family: $accent-font;
+}

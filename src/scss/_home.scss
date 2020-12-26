@@ -1,3 +1,5 @@
+@import 'variables';
+
 /* Index Section */
 .index-container{
   box-sizing: border-box;
@@ -12,13 +14,14 @@
   width: 100%;
   height: auto;
   z-index: 2;
-}
-#index_logo{
-  height: 60vh;
-  width: auto;
-  transition: transform 1.5s ease-out;
-  margin: auto;
-  display:block
+
+  #index_logo{
+    height: 60vh;
+    width: auto;
+    transition: transform 1.5s ease-out;
+    margin: auto;
+    display:block
+  }
 }
 
 #introText {
@@ -28,13 +31,21 @@
   transform: translate(-50%,-50%);
   z-index: 1;
   width: 35%;
-}
-#introName {
-  font-family: $heading-font;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
+
+  #introName {
+    font-family: $heading-font;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+    span{
+      color: $primary-color;
+    }
+  }
+
+  p {
+    font-family: $primary-font;
+  }
 }
 
 #fading-effect{
@@ -54,5 +65,19 @@
   }
   #index_logo{
     transform: translateX(-50%);
+  }
+}
+
+#downArrow{
+  position: absolute;
+  width:2em;
+  height:auto;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  img{
+    width:100%;
   }
 }
