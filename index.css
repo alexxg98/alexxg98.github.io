@@ -1,7 +1,7 @@
 body{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  background-color: #691F2B;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  /* background-color: #691F2B; */
   font-size: 1em;
   position: relative;
 }
@@ -25,7 +25,7 @@ img{
   z-index: 3; /*Makes sure the fading-effect box doesn't show ontop*/
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #691F2B;
   overflow-x: hidden;
   padding-top: 20px;
   color: white;
@@ -34,6 +34,8 @@ img{
 .sidenav a {
   padding: 6px 8px 6px 26px;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 1.2em;
   color: white;
   display: block;
@@ -50,6 +52,7 @@ img{
   width: 100%;
   height: 85vh;
   position: relative;
+  /* background-image: url("images/background.jpg"); */
   /* border: solid red 2px; */
 }
 
@@ -78,12 +81,12 @@ img{
   left: 60%;
   transform: translate(-50%,-50%);
   z-index: 1;
-  color: white;
+  /* color: white; */
   width: 35%;
 }
 #introName {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-bottom: 30px;
@@ -95,7 +98,7 @@ img{
   bottom: 0;
   right: 0;
   width: 100%;
-  background: #691F2B;
+  background: white;
   transition: transform 1.5s linear;
   /* border: solid red 2px; */
 }
@@ -109,4 +112,16 @@ img{
   margin: auto;
   margin-top: 2%;
   display: block;
+}
+
+#copyrightBar{
+  bottom: 10px;
+  position: absolute;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 6px 8px 6px 12px;
+  display: block;
+  width: 100%;
+  font-family: 'Cinzel', serif;
 }
