@@ -3,9 +3,10 @@
 /* Index Section */
 .index-container{
   box-sizing: border-box;
-  width: 100%;
+  width: calc(100% - 150px);
   height: 85vh;
   position: relative;
+  margin-left: 150px;
 }
 
 .logo-container{
