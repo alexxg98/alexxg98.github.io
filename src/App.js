@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from './components/Home.js';
 import Home from './components/Navigation.js';
+import Timeline from './components/WorkTimeline';
+import workData from './workData';
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
 
       <Navbar/>
       <Home/>
+      <Timeline data={workData} />
 
     </div>
   );
