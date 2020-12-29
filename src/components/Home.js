@@ -8,7 +8,7 @@ export default class Home extends Component {
   render(){
     return (
 
-      <div className="index-container">
+      <div className="index-container" id="HomeSec">
         <div className="logo-container">
           <img src={logo} alt="logo" id="index_logo" />
         </div>
@@ -19,7 +19,7 @@ export default class Home extends Component {
         </div>
 
         <div id="downArrow">
-          <a href="#about"> <img src={downArrow} alt="Down to About Section"/> </a>
+          <a href="#AboutSec"> <img src={downArrow} alt="Down to About Section"/> </a>
         </div>
       </div>
 

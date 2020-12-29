@@ -8,11 +8,12 @@ export default class Home extends Component {
     return (
 
       <div class="sidenav">
-        <a href="#">
+        <a href="#HomeSec">
           <img src={logoW} id="nav_logo" alt="logo" />
         </a>
-        <a href="index.html">Home</a>
-        <a href="#about">About Me</a>
+        <a href="#HomeSec">Home</a>
+        <a href="#AboutSec">About Me</a>
+        <a href="#ExperienceSec">Experience</a>
         <span id="copyrightBar"> Designed &amp; built by Alexandria Guo | 2021 </span>
       </div>
 

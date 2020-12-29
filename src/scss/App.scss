@@ -5,13 +5,24 @@
 // }
 
 body{
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: 1em;
   position: relative;
 }
 
 img{
   width: 100%;
   height: 100%;
+}
+
+.sectionTitle{
+  font-family: $heading-font;
+  font-weight: $reg-fontsize;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: $primary-font;
+  font-weight: $reg-fontsize;
+  font-size: 1em;
 }

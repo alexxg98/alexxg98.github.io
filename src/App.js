@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from './components/Home.js';
-import Home from './components/Navigation.js';
-import Timeline from './components/WorkTimeline';
-import workData from './workData';
+import Navbar from './components/Navigation.js';
+import Home from './components/Home.js';
+import AboutMe from './components/AboutMe.js';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
 
       <Navbar/>
       <Home/>
-      <Timeline data={workData} />
+      <AboutMe/>
+      <Experience/>
 
     </div>
   );
