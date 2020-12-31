@@ -4,7 +4,7 @@
 .index-container{
   box-sizing: border-box;
   width: calc(100% - 150px);
-  height: 85vh;
+  height: 95vh;
   position: relative;
   margin-left: 150px;
 }
@@ -35,17 +35,13 @@
 
   #introName {
     font-family: $heading-font;
-    font-weight: 400;
+    font-weight: $reg-fontsize;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 30px;
     span{
       color: $primary-color;
     }
-  }
-
-  p {
-    font-family: $primary-font;
   }
 }
 
