@@ -7,7 +7,7 @@ export default class Home extends Component {
   render(){
     return (
 
-      <div class="sidenav">
+      <div className="sidenav">
         <a href="#HomeSec">
           <img src={logoW} id="nav_logo" alt="logo" />
         </a>

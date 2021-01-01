@@ -9,7 +9,7 @@ export default class Experience extends Component {
     return (
 
       <div className="experience-container" id="ExperienceSec">
-        <span className="sectionTitle">Where I Have Worked</span>
+        <span className="sectionTitle">Where I've Worked</span>
         <Timeline data={workData} />
       </div>
 

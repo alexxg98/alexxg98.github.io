@@ -1,9 +1,14 @@
 /* Experience Section */
 .experience-container{
   width: calc(100% - 150px);
-  height: 85vh;
   margin-left: 150px;
   margin-top: 15vh;
   box-sizing: border-box;
   // border: solid red 3px;
+
+  .sectionTitle {
+    margin-left: 20%;
+    margin-top: 200px;
+    // border: solid red 3px;
+  }
 }
