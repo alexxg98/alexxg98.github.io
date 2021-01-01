@@ -1,0 +1,91 @@
+@import 'variables';
+
+/* Contact Section */
+.contact-container {
+  width: calc(100% - 150px);
+  height: 80vh;
+  margin: 15vh 150px 10vh;
+  box-sizing: border-box;
+
+  .sectionTitle{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.grid-container-contact {
+  width: 40%;
+  height: auto;
+  margin: 10vh auto auto auto;
+  display: grid;
+  // grid-column-gap: 5%;
+  grid-row-gap: 40%;
+  grid-template-columns: 55% 55%;
+  grid-template-rows: auto auto;
+  // border: solid yellow 3px;
+
+  .grid-item {
+    line-height: 1.5em;
+    // border: solid red 3px;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+      color: $secondary-color;
+
+      p::after {
+        content: " >>";
+      }
+    }
+
+    h6 {
+      font-family: $heading-font;
+    }
+
+    p {
+      width: 100%;
+      text-align: left;
+      margin: 0;
+    }
+  }
+}
+
+.email {
+  grid-column: 1;
+  grid-row: 1;
+}
+.linkedin {
+  grid-column: 2;
+  grid-row: 1;
+}
+.github {
+  grid-column: 1;
+  grid-row: 2;
+}
+.resume {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.email, .linkedin, .github, .resume{
+  // border: solid $primary-color 1px;
+  padding: 1em 2em;
+
+  &:hover {
+  // transform: translateY(-10%);
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-size: $light-fontsize;
+  }
+}
