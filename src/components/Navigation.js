@@ -11,14 +11,13 @@ export default class Home extends Component {
         <a href="#HomeSec">
           <img src={logoW} id="nav_logo" alt="logo" />
         </a>
-        
+
         <a href="#HomeSec">Home</a>
         <a href="#AboutSec">About Me</a>
         <a href="#ExperienceSec">Experience</a>
         <a href="#ProjSec">Projects</a>
         <a href="#ContactSec">Contact</a>
 
-        <span id="copyrightBar"> Designed &amp; built by Alexandria Guo | 2021 </span>
       </div>
 
     );

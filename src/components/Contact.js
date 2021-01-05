@@ -7,7 +7,7 @@ export default class Contact extends Component {
     return (
 
       <div className="contact-container" id="ContactSec">
-        <span class="sectionTitle">Let's get in touch!</span>
+        <span className="sectionTitle">Let's get in touch!</span>
         <p>Whether you want to ask a question, request to see more of my work, or even just to say hi, feel free to contact me! I'll try my best to reply back to you.</p>
 
         <div className="grid-container-contact">
@@ -39,6 +39,8 @@ export default class Contact extends Component {
             </a>
           </div>
         </div>
+
+        <span id="copyrightBar"><hr/>Designed &amp; built by Alexandria Guo | 2021</span>
 
       </div>
 

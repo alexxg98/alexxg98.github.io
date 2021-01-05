@@ -2,9 +2,10 @@
 
 /* Navbar */
 #nav_logo{
-  width: 70%;
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
+  border: solid yellow 1px
 }
 
 .sidenav {
@@ -35,14 +36,14 @@
   }
 }
 
-#copyrightBar{
-  bottom: 10px;
-  position: absolute;
-  color: white;
-  font-size: 0.8em;
-  text-align: center;
-  padding: 6px 8px 6px 12px;
-  display: block;
-  width: 100%;
-  font-family: $accent-font;
-}
+// #copyrightBar{
+//   bottom: 10px;
+//   position: absolute;
+//   color: white;
+//   font-size: 0.8em;
+//   text-align: center;
+//   padding: 6px 8px 6px 12px;
+//   display: block;
+//   width: 100%;
+//   font-family: $accent-font;
+// }

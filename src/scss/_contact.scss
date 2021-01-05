@@ -3,8 +3,8 @@
 /* Contact Section */
 .contact-container {
   width: calc(100% - 150px);
-  height: 80vh;
-  margin: 15vh 150px 10vh;
+  height: 95vh;
+  margin: 15vh 150px 0;
   box-sizing: border-box;
 
   .sectionTitle{
@@ -42,7 +42,7 @@
 
     &:hover {
       text-decoration: none;
-      color: $secondary-color;
+      color: $inverse-color;
 
       p::after {
         content: " >>";
@@ -85,7 +85,25 @@
   &:hover {
   // transform: translateY(-10%);
   background-color: $primary-color;
-  color: $secondary-color;
+  color: $inverse-color;
   font-size: $light-fontsize;
+  }
+}
+
+#copyrightBar{
+  width: calc(100% - 150px);
+  margin: 15vh 0 0 0;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+  display: block;
+  font-family: $accent-font;
+  font-size: 0.8em;
+  text-align: center;
+  color: $primary-color;
+
+  hr {
+    width: 90%;
+    color: $primary-color;
   }
 }
