@@ -104,21 +104,16 @@
     height: auto;
     margin: auto;
 
+    .projTitle {
+      margin: 0;
+    }
+
     p {
       padding: 5px;
+      margin-bottom: 0;
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 .projSoftware {
   box-shadow: 0.18em 0.18em 0.1em gray;
@@ -127,7 +122,7 @@
   margin-right: 0.5em;
 }
 
-#openProj, #sourceCode{
+#sourceCode{
   display: inline-block;
   background-color: inherit;
   color: $secondary-color;
@@ -150,6 +145,7 @@
 
     &:after {
       content: '\00bb';
+      font-weight: $reg-fontsize;
       position: absolute;
       opacity: 0;
       top: 0;
