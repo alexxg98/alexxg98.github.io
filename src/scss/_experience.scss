@@ -1,3 +1,5 @@
+@import 'variables';
+
 /* Experience Section */
 .experience-container{
   width: calc(100% - 150px);
@@ -7,8 +9,30 @@
   // border: solid red 3px;
 
   .sectionTitle {
-    margin-left: 20%;
-    margin-top: 200px;
+    width: 65%;
+    height: auto;
+    margin: 1em auto;
     // border: solid red 3px;
+    display: block;
+  }
+
+  #resume a {
+    float: right;
+    font-size: 0.5em;
+    text-decoration: none;
+    color: $primary-color;
+    border: solid $primary-color 1.5px;
+    padding: 5px 10px;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+
+    &:hover {
+      text-decoration: none;
+
+      &::after {
+        content: ' \00bb';
+      }
+    }
   }
 }

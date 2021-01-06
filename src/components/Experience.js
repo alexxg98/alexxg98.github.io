@@ -9,7 +9,11 @@ export default class Experience extends Component {
     return (
 
       <div className="experience-container" id="ExperienceSec">
-        <span className="sectionTitle">Where I've Worked</span>
+        <h6 className="sectionTitle">Where I've Worked
+          <span id="resume">
+            <a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          </span>
+        </h6>
         <Timeline data={workData} />
       </div>
 

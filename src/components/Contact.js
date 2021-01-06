@@ -27,17 +27,18 @@ export default class Contact extends Component {
 
           <div className="grid-item github">
             <a href="https://github.com/alexxg98">
-              <h6>View my</h6>
+              <h6>Explore my</h6>
               <p>GitHub</p>
             </a>
           </div>
 
-          <div className="grid-item resume">
-            <a href="Resume.pdf" target="_blank">
-              <h6>View my</h6>
-              <p>Resume</p>
-            </a>
+          <div className="grid-item design">
+          <a href="https://alexxg98.github.io/Design_Portfolio/">
+            <h6>Check out my</h6>
+            <p>Design Portfolio</p>
+          </a>
           </div>
+          
         </div>
 
         <span id="copyrightBar"><hr/>Designed &amp; built by Alexandria Guo | 2021</span>
