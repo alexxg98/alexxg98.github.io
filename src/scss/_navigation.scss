@@ -1,13 +1,6 @@
 @import 'variables';
 
 /* Navbar */
-#nav_logo{
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  border: solid yellow 1px
-}
-
 .sidenav {
   height: 100%;
   width: 150px;
@@ -19,6 +12,16 @@
   overflow-x: hidden;
   padding-top: 20px;
   color: white;
+
+  #logo_home{
+    padding: 0;
+
+    img{
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
 
   a {
     padding: 6px 8px 6px 26px;
