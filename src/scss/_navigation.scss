@@ -58,13 +58,19 @@
       }
     }
 
-    #toHome {
-      visibility: hidden;
-      font-size: 0;
-    }
-    #toAbout, #toExp, #toProj {
-      &::after {
-        content: ' |'
+    .linkto {
+      float: right;
+      padding-right: 1%;
+      padding-top: 2px;
+
+      #toHome {
+        visibility: hidden;
+        font-size: 0;
+      }
+      #toAbout, #toExp, #toProj {
+        &::after {
+          content: ' |'
+        }
       }
     }
 

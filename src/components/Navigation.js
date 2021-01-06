@@ -12,11 +12,13 @@ export default class Home extends Component {
           <img src={logoW} alt="logo" />
         </a>
 
-        <a href="#HomeSec" id="toHome">Home</a>
-        <a href="#AboutSec" id="toAbout">About Me</a>
-        <a href="#ExperienceSec" id="toExp">Experience</a>
-        <a href="#ProjSec" id="toProj">Projects</a>
-        <a href="#ContactSec" id="toContact">Contact</a>
+        <div className="linkto">
+          <a href="#HomeSec" id="toHome">Home</a>
+          <a href="#AboutSec" id="toAbout">About Me</a>
+          <a href="#ExperienceSec" id="toExp">Experience</a>
+          <a href="#ProjSec" id="toProj">Projects</a>
+          <a href="#ContactSec" id="toContact">Contact</a>
+        </div>
 
       </div>
 
