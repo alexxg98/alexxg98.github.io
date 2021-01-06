@@ -26,3 +26,29 @@ p, a {
   font-weight: $reg-fontsize;
   font-size: 1em;
 }
+
+/*Scroll Button*/
+#topButton {
+    position: fixed;
+    bottom: 1em;
+    right: 30px;
+    // dispay: none;
+    border: none;
+    outline: none;
+    background-color: inherit;
+
+    img {
+      width: 2em;
+      height: auto;
+      float: right;
+      bottom: auto;
+      position: relative;
+      margin-bottom: 35%;
+
+      &:hover {
+        cursor: pointer;
+        width: 2.5em;
+        height: auto;
+      }
+    }
+}
