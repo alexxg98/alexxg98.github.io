@@ -64,10 +64,10 @@ export default class Projects extends Component {
             <p>Featured projects from CUNY TechWorks</p>
           </div>
 
-          <div className="grid-item">
-            <button onClick={() => this.setState({ index: 0})}>Dead Zones</button>
-            <button onClick={() => this.setState({ index: 1})}>Hotel Availability</button>
-            <button onClick={() => this.setState({ index: 2})}>Learning JQuery</button>
+          <div className="grid-item" id="selectProj">
+            <button onClick={() => this.setState({index: 0})}>Dead Zones</button>
+            <button onClick={() => this.setState({index: 1})}>Hotel Availability</button>
+            <button onClick={() => this.setState({index: 2})}>Learning JQuery</button>
           </div>
 
           <div className="grid-item projInfo">

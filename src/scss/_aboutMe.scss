@@ -9,7 +9,6 @@
   box-sizing: border-box;
 
   .sectionTitle{
-    // border: solid red 3px;
     width: 100%;
     text-align: center;
     display: inline-block;
@@ -23,12 +22,6 @@
     text-transform: capitalize;
     margin-bottom: 5px;
   }
-
-  // p {
-  //   width: 75%;
-  //   margin: auto;
-  //   padding: 25px;
-  // }
 }
 
 .grid-container-about {
@@ -39,13 +32,10 @@
   grid-column-gap: 5%;
   grid-row-gap: 1%;
   grid-template-rows: auto auto;
-  // grid-template-columns: 35% 50%;
-  // border: solid yellow 3px;
 
   .grid-item {
     line-height: 1.5em;
     text-align: left;
-    // border: solid red 3px;
   }
 }
 
@@ -111,6 +101,29 @@
       &::before {
         content: ' ';
       }
+    }
+  }
+}
+
+// Smartphone View
+@media (max-width:480px){
+  .aboutMe-container{
+    width: 100%;
+    margin-left: 0;
+    //Offset fixed navbar when directing to section
+    padding-top: 10vh;
+    margin-top: 0;
+
+    .grid-container-about {
+      width: 85%;
+      display: block;
+
+      .backgroundText, .skills, .education {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10%;
+      }
+
     }
   }
 }

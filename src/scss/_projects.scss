@@ -66,12 +66,10 @@
   grid-template-rows: auto auto;
   grid-template-columns: 20% 75%;
   grid-gap: 1em 5%;
-  // border: solid blue 3px;
 
   .grid-item {
     line-height: 1.5em;
     text-align: left;
-    // border: solid red 3px;
   }
 
   #techworksTitle {
@@ -159,6 +157,60 @@
     &:after {
       opacity: 1;
       right: 0;
+    }
+  }
+}
+
+// Smartphone View
+@media (max-width:480px){
+  .projects-container{
+    width: 100%;
+    margin-left: 0;
+    //Offset fixed navbar when directing to section
+    padding-top: 4vh;
+    margin-top: 0;
+
+    .sectionTitle {
+      text-align: center;
+      width: 55%;
+    }
+  }
+
+  .grid-container-coursework {
+    display: block;
+    width: 75%;
+
+    #credTrackInfo, #theHiveInfo {
+      padding-right: 0;
+    }
+
+    #sourceCode{
+      margin-bottom: 4em;
+    }
+  }
+
+  .grid-container-techworks {
+    display: block;
+    width: 75%;
+    margin: auto;
+
+    #selectProj{
+      display: inline;
+      line-height: 0;
+
+      button {
+        width: auto;
+        font-size: 0.65em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        padding-right: 1em;
+        border: none;
+        border-top: solid $primary-color 1px;
+      }
+    }
+
+    .projInfo{
+      margin-top: 2em;
     }
   }
 }

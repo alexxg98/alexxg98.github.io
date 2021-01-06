@@ -38,7 +38,7 @@ export default class Contact extends Component {
             <p>Design Portfolio</p>
           </a>
           </div>
-          
+
         </div>
 
         <span id="copyrightBar"><hr/>Designed &amp; built by Alexandria Guo | 2021</span>

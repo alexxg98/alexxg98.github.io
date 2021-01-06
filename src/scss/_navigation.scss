@@ -39,14 +39,40 @@
   }
 }
 
-// #copyrightBar{
-//   bottom: 10px;
-//   position: absolute;
-//   color: white;
-//   font-size: 0.8em;
-//   text-align: center;
-//   padding: 6px 8px 6px 12px;
-//   display: block;
-//   width: 100%;
-//   font-family: $accent-font;
-// }
+// Smartphone View
+@media (max-width:480px){
+  .sidenav {
+    width: 100%;
+    padding: 0.2em 0;
+    height: auto;
+
+    #logo_home {
+      img{
+        width: 10%;
+        margin-bottom: 0;
+        padding-left: 0.5em;
+      }
+
+      &::before {
+        content: '';
+      }
+    }
+
+    #toHome {
+      visibility: hidden;
+      font-size: 0;
+    }
+    #toAbout, #toExp, #toProj {
+      &::after {
+        content: ' |'
+      }
+    }
+
+    a {
+      padding: 6px;
+      font-size: 0.8em;
+      display: inline;
+      text-align: right;
+    }
+  }
+}
