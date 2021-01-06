@@ -48,9 +48,8 @@
 
     #logo_home {
       img{
-        width: 10%;
+        width: 15%;
         margin-bottom: 0;
-        padding-left: 0.5em;
       }
 
       &::before {
@@ -59,9 +58,11 @@
     }
 
     .linkto {
-      float: right;
       padding-right: 1%;
       padding-top: 2px;
+      top: 25%;
+      right: 0;
+      position: absolute;
 
       #toHome {
         visibility: hidden;
@@ -76,9 +77,18 @@
 
     a {
       padding: 6px;
-      font-size: 0.8em;
+      font-size: 0.75em;
       display: inline;
       text-align: right;
+    }
+  }
+}
+
+//Smaller Smartphone View
+@media (max-width:320px){
+  .sidenav {
+    a {
+      padding: 3px;
     }
   }
 }

@@ -85,7 +85,7 @@
     margin-left: 0;
 
     .logo-container{
-      visibility: hidden;
+      // visibility: hidden;
       #index_logo {
         width: 0;
       }
@@ -96,9 +96,13 @@
       top: 50%;
       margin: auto;
       z-index: 1;
-      width: 85%;
+      width: 100%;
       left: 50%;
       text-align: center;
+
+      p {
+        padding: 0 calc(15%/2);
+      }
     }
 
     #fading-effect{

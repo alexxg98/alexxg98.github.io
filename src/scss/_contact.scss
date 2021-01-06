@@ -147,3 +147,10 @@
     margin-top: 10vh;
   }
 }
+
+// Smaller Smartphone View
+@media (max-width:320px){
+  .email, .linkedin, .github, .design {
+    padding: 0.6em 2em;
+  }
+}
