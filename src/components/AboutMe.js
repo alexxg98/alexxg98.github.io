@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import cartoonMe from '../images/cartoon.png';
+import { Cartoon } from '../images';
 import '../scss/App.scss';
 import '../scss/_aboutMe.scss';
 
@@ -12,7 +12,7 @@ export default class AboutMe extends Component {
 
         <div className="grid-container-about">
           <div className="grid-item cartoon-container">
-            <img src={cartoonMe} alt="Me as a cartoon" id="cartoon-img" />
+            <img src={Cartoon} alt="Me as a cartoon" id="cartoon-img" />
           </div>
 
           <div className="grid-item backgroundText">

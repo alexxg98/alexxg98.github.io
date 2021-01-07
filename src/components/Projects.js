@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
-import creditsTracker from '../images/creditsTracker.png';
-import theHive from '../images/theHive.JPG';
-import deadZones from '../images/deadZones.jpg';
-import hotelAval from '../images/hotelAval.JPG';
-import jqProj from '../images/jqProj.JPG';
+import { CreditsTracker, TheHive, DeadZones, HotelAvail, JqProj } from '../images';
 import '../scss/App.scss';
 import '../scss/_projects.scss';
 
@@ -12,7 +8,7 @@ export default class Projects extends Component {
     super(props);
     this.state = {
       index: 0,
-      img_path: [deadZones, hotelAval, jqProj],
+      img_path: [{DeadZones}, {HotelAvail}, {JqProj}],
       img_alt: ["Dead Zone Demo", "Hotel Availability Demo", "Learning JQuery Demo"],
       title: ["Informative Website", "Learning JavaScript", "Learning jQuery"],
       description: [
@@ -35,7 +31,7 @@ export default class Projects extends Component {
 
         <div className="grid-container-coursework">
           <div className="grid-item projImg">
-            <img src={creditsTracker} alt="Credits Tracker Demo"/>
+            <img src={CreditsTracker} alt="Credits Tracker Demo"/>
           </div>
           <div className="grid-item" id="credTrackInfo">
             <p className="projType">Coursework</p>
@@ -47,7 +43,7 @@ export default class Projects extends Component {
           </div>
 
           <div className="grid-item projImg">
-            <img src={theHive} alt="The Hive Demo"/>
+            <img src={TheHive} alt="The Hive Demo"/>
           </div>
           <div className="grid-item" id="theHiveInfo">
             <p className="projType">Coursework</p>
