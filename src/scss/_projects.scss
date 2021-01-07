@@ -161,24 +161,18 @@
   }
 }
 
-// Smartphone View
-@media (max-width:480px){
+// Tablet View
+@media (max-width:768px){
   .projects-container{
-    width: 100%;
-    margin-left: 0;
-    //Offset fixed navbar when directing to section
-    padding-top: 4vh;
-    margin-top: 0;
-
     .sectionTitle {
       text-align: center;
-      width: 55%;
+      width: 75%;
     }
   }
 
   .grid-container-coursework {
     display: block;
-    width: 75%;
+    width: 80%;
 
     #credTrackInfo, #theHiveInfo {
       padding-right: 0;
@@ -191,7 +185,7 @@
 
   .grid-container-techworks {
     display: block;
-    width: 75%;
+    width: 80%;
     margin: auto;
 
     #selectProj{
@@ -212,5 +206,28 @@
     .projInfo{
       margin-top: 2em;
     }
+  }
+}
+
+// Smartphone View
+@media (max-width:480px){
+  .projects-container{
+    width: 100%;
+    margin-left: 0;
+    //Offset fixed navbar when directing to section
+    padding-top: 4vh;
+    margin-top: 0;
+
+    .sectionTitle {
+      width: 55%;
+    }
+  }
+
+  .grid-container-coursework {
+    width: 75%;
+  }
+
+  .grid-container-techworks {
+    width: 75%;
   }
 }

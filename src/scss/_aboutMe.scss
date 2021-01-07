@@ -105,6 +105,24 @@
   }
 }
 
+// Tablet View
+@media (max-width:768px){
+  .aboutMe-container{
+
+    .grid-container-about {
+      width: 80%;
+      display: block;
+
+      .backgroundText, .skills, .education {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5%;
+      }
+
+    }
+  }
+}
+
 // Smartphone View
 @media (max-width:480px){
   .aboutMe-container{
@@ -116,11 +134,8 @@
 
     .grid-container-about {
       width: 85%;
-      display: block;
 
       .backgroundText, .skills, .education {
-        width: 100%;
-        margin-left: 0;
         margin-top: 10%;
       }
 

@@ -35,6 +35,25 @@
   }
 }
 
+// Tablet View
+@media (max-width:768px){
+  .experience-container{
+    .sectionTitle {
+      text-align: center;
+      width: 75%;
+    }
+
+    #resume {
+      display: inline-block;
+      margin-top: 5%;
+
+      a::after {
+        content: ' \00bb';
+      }
+    }
+  }
+}
+
 // Smartphone View
 @media (max-width:480px){
   .experience-container{
@@ -45,17 +64,11 @@
     margin-top: 0;
 
     .sectionTitle {
-      text-align: center;
       width: 50%;
     }
 
     #resume {
-      display: inline-block;
       margin-top: 10%;
-
-      a::after {
-        content: ' \00bb';
-      }
     }
   }
 }

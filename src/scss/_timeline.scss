@@ -68,6 +68,10 @@
       font-size: 1.2em;
     }
 
+    span {
+      font-size: 0.8em;
+    }
+
     p {
       line-height: 24px;
       margin-bottom: 8px;
@@ -143,17 +147,21 @@
   }
 }
 
-// @media only screen and (max-width: 1023px) {
-//   .timeline-item-content {
-//     width: 100%;
-//
-//     .moreInfo {
-//       opacity: 1;
-//     }
-//   }
-// }
+// Tablet View
+@media only screen and (max-width: 768px) {
+  .timeline-item{
+    .timeline-item-content {
+      max-width: 85%;
+
+      .moreInfo {
+        opacity: 1;
+      }
+    }
+  }
+}
 
 // Smartphone View
+// Change format
 @media only screen and (max-width: 480px) {
   //Timeline bar
   .timeline-contatiner::after {
