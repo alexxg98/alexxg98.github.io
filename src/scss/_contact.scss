@@ -19,91 +19,91 @@
     margin: auto;
     text-align: center;
   }
-}
 
-.grid-container-contact {
-  width: 40%;
-  height: auto;
-  margin: 10vh auto auto auto;
-  display: grid;
-  // grid-column-gap: 5%;
-  grid-row-gap: 20%;
-  grid-template-columns: 55% 55%;
-  grid-template-rows: auto auto auto;
+  .grid-container-contact {
+    width: 40%;
+    height: auto;
+    margin: 10vh auto auto auto;
+    display: grid;
+    // grid-column-gap: 5%;
+    grid-row-gap: 20%;
+    grid-template-columns: 55% 55%;
+    grid-template-rows: auto auto auto;
 
-  .grid-item {
-    line-height: 1.5em;
-  }
+    .grid-item {
+      line-height: 1.5em;
+    }
 
-  a {
-    color: inherit;
+    a {
+      color: inherit;
 
-    &:hover {
-      text-decoration: none;
-      color: $inverse-color;
+      &:hover {
+        text-decoration: none;
+        color: $inverse-color;
 
-      p::after {
-        content: ' \00bb';
+        p::after {
+          content: ' \00bb';
+        }
+      }
+
+      h6 {
+        font-family: $heading-font;
+      }
+
+      p {
+        width: 100%;
+        text-align: left;
+        margin: 0;
       }
     }
+  }
 
-    h6 {
-      font-family: $heading-font;
-    }
+  .email {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .linkedin {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .github {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .design {
+    grid-column: 2;
+    grid-row: 2;
+  }
 
-    p {
-      width: 100%;
-      text-align: left;
-      margin: 0;
+  .email, .linkedin, .github, .design{
+    // border: solid $primary-color 1px;
+    padding: 1em 2em;
+
+    &:hover {
+    // transform: translateY(-10%);
+    background-color: $primary-color;
+    color: $inverse-color;
+    font-size: $light-fontsize;
     }
   }
-}
 
-.email {
-  grid-column: 1;
-  grid-row: 1;
-}
-.linkedin {
-  grid-column: 2;
-  grid-row: 1;
-}
-.github {
-  grid-column: 1;
-  grid-row: 2;
-}
-.design {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.email, .linkedin, .github, .design{
-  // border: solid $primary-color 1px;
-  padding: 1em 2em;
-
-  &:hover {
-  // transform: translateY(-10%);
-  background-color: $primary-color;
-  color: $inverse-color;
-  font-size: $light-fontsize;
-  }
-}
-
-#copyrightBar{
-  width: calc(100% - 150px);
-  height: auto;
-  margin: 15vh 0 0 0;
-  position: absolute;
-  bottom: 0;
-  padding: 20px 0;
-  display: block;
-  font-family: $accent-font;
-  font-size: 0.8em;
-  text-align: center;
-  color: $primary-color;
-
-  hr {
-    width: 90%;
+  #copyrightBar{
+    width: calc(100% - 150px);
+    height: auto;
+    margin: 15vh 0 0 0;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+    display: block;
+    font-family: $accent-font;
+    font-size: 0.8em;
+    text-align: center;
     color: $primary-color;
+
+    hr {
+      width: 90%;
+      color: $primary-color;
+    }
   }
 }
 

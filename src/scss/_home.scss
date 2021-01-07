@@ -7,74 +7,75 @@
   height: 95vh;
   position: relative;
   margin-left: 150px;
-}
 
-.logo-container{
-  position: absolute;
-  top: 15%;
-  width: 100%;
-  height: auto;
-  z-index: 2;
+  .logo-container{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: auto;
+    z-index: 2;
 
-  #index_logo{
-    height: 60vh;
-    width: auto;
-    transition: transform 1.5s ease-out;
-    margin: auto;
-    display:block
-  }
-}
-
-#introText {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%,-50%);
-  z-index: 1;
-  width: 35%;
-
-  #introName {
-    font-family: $heading-font;
-    font-weight: $reg-fontsize;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-bottom: 30px;
-    span{
-      color: $primary-color;
+    #index_logo{
+      height: 60vh;
+      width: auto;
+      transition: transform 1.5s ease-out;
+      margin: auto;
+      display:block
     }
   }
-}
 
-#fading-effect{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  background: white;
-  transition: transform 1.5s linear;
-}
+  #introText {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 35%;
 
-.index-container:hover{
-  #fading-effect{
-    transform: translateX(-100%);
+    #introName {
+      font-family: $heading-font;
+      font-weight: $reg-fontsize;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding-bottom: 30px;
+      span{
+        color: $primary-color;
+      }
+    }
+
+    #fading-effect{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      background: white;
+      transition: transform 1.5s linear;
+    }
   }
-  #index_logo{
-    transform: translateX(-50%);
-  }
-}
 
-#downArrow{
-  position: absolute;
-  width:2em;
-  height:auto;
-  margin: auto;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: block;
-  img{
-    width:100%;
+  &:hover{
+    #fading-effect{
+      transform: translateX(-100%);
+    }
+    #index_logo{
+      transform: translateX(-50%);
+    }
+  }
+
+  #downArrow{
+    position: absolute;
+    width:2em;
+    height:auto;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+
+    img{
+      width:100%;
+    }
   }
 }
 
