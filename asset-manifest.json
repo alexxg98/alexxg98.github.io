@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alexxg98.github.io/static/css/main.591d8f7a.chunk.css",
+    "main.css": "/alexxg98.github.io/static/css/main.b154d936.chunk.css",
     "main.js": "/alexxg98.github.io/static/js/main.ac08b7eb.chunk.js",
     "main.js.map": "/alexxg98.github.io/static/js/main.ac08b7eb.chunk.js.map",
     "runtime-main.js": "/alexxg98.github.io/static/js/runtime-main.c683c63e.js",
@@ -10,7 +10,7 @@
     "static/js/3.d57b048c.chunk.js": "/alexxg98.github.io/static/js/3.d57b048c.chunk.js",
     "static/js/3.d57b048c.chunk.js.map": "/alexxg98.github.io/static/js/3.d57b048c.chunk.js.map",
     "index.html": "/alexxg98.github.io/index.html",
-    "static/css/main.591d8f7a.chunk.css.map": "/alexxg98.github.io/static/css/main.591d8f7a.chunk.css.map",
+    "static/css/main.b154d936.chunk.css.map": "/alexxg98.github.io/static/css/main.b154d936.chunk.css.map",
     "static/js/2.2fe5e5a9.chunk.js.LICENSE.txt": "/alexxg98.github.io/static/js/2.2fe5e5a9.chunk.js.LICENSE.txt",
     "static/media/cartoon.3081b6bd.png": "/alexxg98.github.io/static/media/cartoon.3081b6bd.png",
     "static/media/creditsTracker.5a086422.png": "/alexxg98.github.io/static/media/creditsTracker.5a086422.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.c683c63e.js",
     "static/js/2.2fe5e5a9.chunk.js",
-    "static/css/main.591d8f7a.chunk.css",
+    "static/css/main.b154d936.chunk.css",
     "static/js/main.ac08b7eb.chunk.js"
   ]
 }
