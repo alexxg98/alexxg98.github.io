@@ -164,42 +164,41 @@
       text-align: center;
       width: 75%;
     }
-  }
 
-  .grid-container-coursework {
-    width: 85%;
+    .grid-container-coursework {
+      width: 85%;
 
-    #credTrackInfo, #theHiveInfo {
-      padding-right: 0;
-    }
+      #credTrackInfo, #theHiveInfo {
+        padding-right: 0;
+      }
 
-    #sourceCode{
-      margin-bottom: 4em;
-    }
-  }
-
-  .grid-container-techworks {
-    display: block;
-    width: 85%;
-    margin: auto;
-
-    #selectProj{
-      display: inline;
-      line-height: 0;
-
-      button {
-        width: auto;
-        font-size: 0.65em;
-        margin-right: 1em;
-        margin-bottom: 1em;
-        padding-right: 1em;
-        border: none;
-        border-top: solid $primary-color 1px;
+      #sourceCode{
+        margin-bottom: 4em;
       }
     }
 
-    .projInfo{
-      margin-top: 2em;
+    .grid-container-techworks {
+      display: block;
+      width: 85%;
+      margin: auto;
+
+      #selectProj{
+        display: inline;
+
+        button {
+          width: auto;
+          font-size: 0.65em;
+          margin-right: 1em;
+          margin-bottom: 1em;
+          padding-right: 1em;
+          border: none;
+          border-top: solid $primary-color 1px;
+        }
+      }
+
+      .projInfo{
+        margin-top: 2em;
+      }
     }
   }
 }

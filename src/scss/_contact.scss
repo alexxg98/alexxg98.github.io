@@ -111,6 +111,7 @@
 @media (max-width:1024px){
   .contact-container{
     height: 70vh;
+
     .sectionTitle {
       width: 75%;
     }
@@ -131,6 +132,28 @@
           color: $secondary-color;
         }
       }
+
+      // No hover effects
+      a {
+        color: inherit;
+
+        p::after {
+          content: ' \00bb';
+        }
+
+        &:hover {
+          color: inherit;
+        }
+      }
+
+      .email, .linkedin, .github, .design{
+        padding: 1em;
+        &:hover {
+        background-color: inherit;
+        color: inherit;
+        font-size: inherit;
+        }
+      }
     }
   }
 }
@@ -138,6 +161,10 @@
 // Tablet View
 @media (max-width:768px){
   .contact-container{
+    p {
+      width: 75%;
+    }
+
     .grid-container-contact {
       width: 75%;
     }
@@ -161,15 +188,15 @@
     p {
       width: 85%;
     }
-  }
 
-  .grid-container-contact {
-    display: block;
-  }
+    .grid-container-contact {
+      display: block;
+    }
 
-  #copyrightBar {
-    width: 100%;
-    margin-top: 10vh;
+    #copyrightBar {
+      width: 100%;
+      margin-top: 10vh;
+    }
   }
 }
 
