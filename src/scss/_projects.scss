@@ -161,8 +161,8 @@
   }
 }
 
-// Tablet View
-@media (max-width:768px){
+// LargeTablet View
+@media (max-width:1024px){
   .projects-container{
     .sectionTitle {
       text-align: center;
@@ -171,8 +171,7 @@
   }
 
   .grid-container-coursework {
-    display: block;
-    width: 80%;
+    width: 85%;
 
     #credTrackInfo, #theHiveInfo {
       padding-right: 0;
@@ -185,7 +184,7 @@
 
   .grid-container-techworks {
     display: block;
-    width: 80%;
+    width: 85%;
     margin: auto;
 
     #selectProj{
@@ -209,6 +208,20 @@
   }
 }
 
+// Tablet View
+@media (max-width:768px){
+  .projects-container{
+    .grid-container-coursework {
+      display: block;
+      width: 80%;
+    }
+
+    .grid-container-techworks {
+      width: 80%;
+    }
+  }
+}
+
 // Smartphone View
 @media (max-width:480px){
   .projects-container{
@@ -221,13 +234,13 @@
     .sectionTitle {
       width: 55%;
     }
-  }
 
-  .grid-container-coursework {
-    width: 75%;
-  }
+    .grid-container-coursework {
+      width: 75%;
+    }
 
-  .grid-container-techworks {
-    width: 75%;
+    .grid-container-techworks {
+      width: 75%;
+    }
   }
 }

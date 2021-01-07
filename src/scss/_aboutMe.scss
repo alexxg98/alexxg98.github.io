@@ -105,20 +105,40 @@
   }
 }
 
+// Large Tablet View
+@media (max-width:1024px){
+  .aboutMe-container{
+    .grid-container-about {
+      width: 85%;
+      grid-template-columns: 25% 70%;
+
+      .cartoon-container{
+        width: 100%;
+      }
+
+      .backgroundText, .skills, .education {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 // Tablet View
 @media (max-width:768px){
   .aboutMe-container{
-
     .grid-container-about {
       width: 80%;
       display: block;
 
-      .backgroundText, .skills, .education {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 5%;
+      .cartoon-container{
+        width: 50%;
+        margin-bottom: 2em;
       }
 
+      .backgroundText, .skills, .education {
+        width: 100%;
+        margin-top: 5%;
+      }
     }
   }
 }

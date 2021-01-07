@@ -147,15 +147,24 @@
   }
 }
 
+// Large Tablet View
+@media only screen and (max-width: 1024px) {
+  .timeline-item{
+    .timeline-item-content {
+      max-width: 80%;
+
+      .moreInfo {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 // Tablet View
 @media only screen and (max-width: 768px) {
   .timeline-item{
     .timeline-item-content {
       max-width: 85%;
-
-      .moreInfo {
-        opacity: 1;
-      }
     }
   }
 }

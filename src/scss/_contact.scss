@@ -107,8 +107,8 @@
   }
 }
 
-// Tablet View
-@media (max-width:768px){
+// large Tablet View
+@media (max-width:1024px){
   .contact-container{
     height: 70vh;
     .sectionTitle {
@@ -118,24 +118,33 @@
     p {
       width: 65%;
     }
-  }
 
-  .grid-container-contact {
-    width: 75%;
-    margin: 2vh auto auto;
+    .grid-container-contact {
+      width: 65%;
+      margin: 2vh auto auto;
 
-    .grid-item {
-      width: 100%;
-      height: auto;
+      .grid-item {
+        width: 100%;
+        height: auto;
 
-      p{
-        color: $secondary-color;
+        p{
+          color: $secondary-color;
+        }
       }
     }
   }
+}
 
-  #copyrightBar {
-    margin-top: 10vh;
+// Tablet View
+@media (max-width:768px){
+  .contact-container{
+    .grid-container-contact {
+      width: 75%;
+    }
+
+    #copyrightBar {
+      margin-top: 10vh;
+    }
   }
 }
 
