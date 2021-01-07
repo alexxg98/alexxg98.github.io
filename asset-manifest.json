@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/alexxg98.github.io/static/css/main.b3dd9e59.chunk.css",
+    "main.js": "/alexxg98.github.io/static/js/main.ac08b7eb.chunk.js",
+    "main.js.map": "/alexxg98.github.io/static/js/main.ac08b7eb.chunk.js.map",
+    "runtime-main.js": "/alexxg98.github.io/static/js/runtime-main.c683c63e.js",
+    "runtime-main.js.map": "/alexxg98.github.io/static/js/runtime-main.c683c63e.js.map",
+    "static/js/2.2fe5e5a9.chunk.js": "/alexxg98.github.io/static/js/2.2fe5e5a9.chunk.js",
+    "static/js/2.2fe5e5a9.chunk.js.map": "/alexxg98.github.io/static/js/2.2fe5e5a9.chunk.js.map",
+    "static/js/3.d57b048c.chunk.js": "/alexxg98.github.io/static/js/3.d57b048c.chunk.js",
+    "static/js/3.d57b048c.chunk.js.map": "/alexxg98.github.io/static/js/3.d57b048c.chunk.js.map",
+    "index.html": "/alexxg98.github.io/index.html",
+    "static/css/main.b3dd9e59.chunk.css.map": "/alexxg98.github.io/static/css/main.b3dd9e59.chunk.css.map",
+    "static/js/2.2fe5e5a9.chunk.js.LICENSE.txt": "/alexxg98.github.io/static/js/2.2fe5e5a9.chunk.js.LICENSE.txt",
+    "static/media/cartoon.3081b6bd.png": "/alexxg98.github.io/static/media/cartoon.3081b6bd.png",
+    "static/media/creditsTracker.5a086422.png": "/alexxg98.github.io/static/media/creditsTracker.5a086422.png",
+    "static/media/deadZones.a5d18116.jpg": "/alexxg98.github.io/static/media/deadZones.a5d18116.jpg",
+    "static/media/hotelAval.ebe7a165.JPG": "/alexxg98.github.io/static/media/hotelAval.ebe7a165.JPG",
+    "static/media/jqProj.05cce77e.JPG": "/alexxg98.github.io/static/media/jqProj.05cce77e.JPG",
+    "static/media/theHive.d8d0eec2.JPG": "/alexxg98.github.io/static/media/theHive.d8d0eec2.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c683c63e.js",
+    "static/js/2.2fe5e5a9.chunk.js",
+    "static/css/main.b3dd9e59.chunk.css",
+    "static/js/main.ac08b7eb.chunk.js"
+  ]
+}
