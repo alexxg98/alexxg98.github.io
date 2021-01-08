@@ -5,14 +5,18 @@ import '../scss/App.scss';
 import '../scss/_navigation.scss';
 import '../scss/_workExp.scss';
 
+const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
+
 export default class NewAgeDrinks extends Component {
   render(){
     return (
 
-      <div className="nad-container">
+      <div className="workExpMore-container">
         <div className="sidenav">
           <img src={LogoW} alt="logo" />
-          <div className="backto">
+          <div className="backto" onClick={scrollToTop}>
             <Link to="/"><p>Back to my main site</p></Link>
           </div>
         </div>
@@ -30,21 +34,21 @@ export default class NewAgeDrinks extends Component {
           <div className="grid-item role">
             <h2>My Role</h2>
           </div>
-          <div className="grid-item descp role">
+          <div className="grid-item role">
             <h2>I researched, wireframed, and implemented the site.</h2>
           </div>
 
           <div className="grid-item">
             <h3>The Goal</h3>
           </div>
-          <div className="grid-item descp">
+          <div className="grid-item">
             <p>New Age Drinks was a fairly new startup - the goal was to build up the campaign and secure funds and interest in the company. As such, it was neccesary to make the site, especially the homepage to grab the user's attention (and email address).</p>
           </div>
 
           <div className="grid-item">
             <h3>Research (Homepage)</h3>
           </div>
-          <div className="grid-item descp research">
+          <div className="grid-item">
             <p>Before prototyping the site's redesign, I needed to research the best way to get user emails - Squeeze vs Splash vs Landing Page. I also looked at other beverage companies to see how their site is laid out, how much information is including in the homepage, and how they created interest to get users to sign up for emails. </p>
           </div>
 
@@ -77,6 +81,7 @@ export default class NewAgeDrinks extends Component {
         </div>
 
         <div className="finalImgs">
+          <h3>Result</h3>
           <img src={NadCta} alt="Call to Action Popup"/>
           <img src={NadHome} alt="Landing Page"/>
           <img src={NadPopup} alt="Delayed/Scroll Popup"/>
