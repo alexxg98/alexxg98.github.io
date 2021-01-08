@@ -35,7 +35,7 @@ export default class WestxEast extends Component {
             <h2>My Role</h2>
           </div>
           <div className="grid-item role">
-            <h2>I helped redesign the homepage and the gallery page.</h2>
+            <h3>I helped redesign the homepage and the gallery page.</h3>
           </div>
 
           <div className="grid-item">

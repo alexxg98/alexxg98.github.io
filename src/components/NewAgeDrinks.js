@@ -35,7 +35,7 @@ export default class NewAgeDrinks extends Component {
             <h2>My Role</h2>
           </div>
           <div className="grid-item role">
-            <h2>I researched, wireframed, and implemented the site.</h2>
+            <h3>I researched, wireframed, and implemented the site.</h3>
           </div>
 
           <div className="grid-item">

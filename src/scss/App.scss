@@ -68,3 +68,11 @@ p, a, li {
     color: $primary-color;
   }
 }
+
+// Smartphone View
+@media (max-width:480px){
+  .footer-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
