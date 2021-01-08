@@ -1,11 +1,8 @@
 @import 'variables';
 
-// .App {
-//   text-align: center;
-// }
-
-body{
+.App {
   position: relative;
+  height: 100%;
 }
 
 img{
@@ -22,7 +19,7 @@ img{
   letter-spacing: 2px;
 }
 
-p, a {
+p, a, li {
   font-family: $primary-font;
   font-weight: $reg-fontsize;
   font-size: 1em;
@@ -30,26 +27,44 @@ p, a {
 
 /*Scroll Button*/
 #topButton {
-    position: fixed;
-    bottom: 1em;
-    right: 30px;
-    // dispay: none;
-    border: none;
-    outline: none;
-    background-color: inherit;
+  position: fixed;
+  bottom: 1em;
+  right: 30px;
+  border: none;
+  outline: none;
+  background-color: inherit;
 
-    img {
-      width: 2em;
+  img {
+    width: 2em;
+    height: auto;
+    float: right;
+    bottom: auto;
+    position: relative;
+    margin-bottom: 35%;
+
+    &:hover {
+      cursor: pointer;
+      width: 2.5em;
       height: auto;
-      float: right;
-      bottom: auto;
-      position: relative;
-      margin-bottom: 35%;
-
-      &:hover {
-        cursor: pointer;
-        width: 2.5em;
-        height: auto;
-      }
     }
+  }
+}
+
+.footer-container{
+  width: calc(100% - 150px);
+  height: auto;
+  margin-left: 150px;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+  display: block;
+  font-family: $accent-font;
+  font-size: 0.8em;
+  text-align: center;
+  color: $primary-color;
+
+  hr {
+    width: 90%;
+    color: $primary-color;
+  }
 }
