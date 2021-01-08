@@ -54,7 +54,7 @@ export default class NewAgeDrinks extends Component {
 
           <div className="grid-item prototype">
             <h3>Prototype</h3>
-            <div className="row">
+            <div className="row sketch">
               <div className="col-md-6 p-2">
                 <img className="img-fluid" src={NadProto1} alt="Sketch of Site"/>
               </div>

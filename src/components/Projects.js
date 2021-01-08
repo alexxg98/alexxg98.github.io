@@ -8,7 +8,7 @@ export default class Projects extends Component {
     super(props);
     this.state = {
       index: 0,
-      img_path: [{DeadZones}, {HotelAvail}, {JqProj}],
+      img_path: [DeadZones, HotelAvail, JqProj],
       img_alt: ["Dead Zone Demo", "Hotel Availability Demo", "Learning JQuery Demo"],
       title: ["Informative Website", "Learning JavaScript", "Learning jQuery"],
       description: [

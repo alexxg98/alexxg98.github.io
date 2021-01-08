@@ -34,7 +34,7 @@ export default class WestxEast extends Component {
           <div className="grid-item role">
             <h2>My Role</h2>
           </div>
-          <div className="grid-item descp role">
+          <div className="grid-item role">
             <h2>I helped redesign the homepage and the gallery page.</h2>
           </div>
 
@@ -53,8 +53,8 @@ export default class WestxEast extends Component {
           </div>
           <div className="grid-item">
             <p>Before prototyping the site's redesign, I wanted to get a feel to how other bridal and fashion companies have organized their pages. While WESTxEAST already had some key elements that will grab a users' attention, the page needed more information. Since users do not spend much time on website, we need to make sure they know what WESTxEAST does and how; but most importantly get them interested in our service.</p>
-            <div class="grid-container-researchInner">
-              <div class="grid-item">
+            <div className="grid-container-researchInner">
+              <div className="grid-item">
                 What the page already had:
                 <ul>
                   <li>Video Header</li>
@@ -63,7 +63,7 @@ export default class WestxEast extends Component {
                   <li>Press Quotes</li>
                 </ul>
               </div>
-              <div class="grid-item">
+              <div className="grid-item">
                 What I can add to the page:
                 <ul>
                   <li>Brief Overview of Process</li>
@@ -74,7 +74,7 @@ export default class WestxEast extends Component {
             </div>
           </div>
 
-          <div className="grid-item prototypeHome">
+          <div className="grid-item prototype">
             <h3>Prototype</h3>
             <div className="row">
               <div className="col-md-4 p-2">
@@ -96,7 +96,7 @@ export default class WestxEast extends Component {
             <p>The gallery, originally, was very open - all the client photos were on display. While this is great to showcase all the photos, it was unorganized and did not look uniform or professional (it was very pinterest-esque). After some research - looking at other site's gallery page - I thought that having a mini-gallery for each client was a good way to organize the photos and give the gallery page a cleaner look.</p>
           </div>
 
-          <div className="grid-item prototypeGallery">
+          <div className="grid-item prototype">
             <h3>Prototype</h3>
             <div className="row">
               <div className="col-md-12 p-2">
