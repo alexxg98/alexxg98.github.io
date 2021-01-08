@@ -23,19 +23,21 @@
     }
   }
 
-  a {
-    padding: 6px 8px 6px 26px;
-    text-decoration: none;
-    font-family: $heading-font;
-    font-weight: 400;
-    font-size: 1.2em;
-    color: white;
-    display: block;
-  }
+  .linkto, .backto {
+    a {
+      padding: 6px 8px 6px 26px;
+      text-decoration: none;
+      font-family: $heading-font;
+      font-weight: 400;
+      font-size: 1.2em;
+      color: white;
+      display: block;
 
-  a:hover {
-    text-decoration: none;
-    color: white;
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 }
 

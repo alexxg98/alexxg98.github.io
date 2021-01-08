@@ -1,25 +1,21 @@
 import React from 'react';
-import Navbar from './components/Navigation.js';
-import Home from './components/Home.js';
-import AboutMe from './components/AboutMe.js';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Main from './components/Main.js';
+import NewAgeDrinks from './components/NewAgeDrinks';
+import Footer from './components/Footer'
 import BackToTop from './components/BackToTop';
 
 function App() {
   return (
     <div className="App">
-
-      <Navbar/>
-      <Home/>
-      <AboutMe/>
-      <Experience/>
-      <Projects/>
-      <Contact/>
-
-      <BackToTop/>
-
+      <Router>
+        <Switch>
+          <Route path="/" exact component={() => <Main/>}/>
+          <Route path="/NewAgeDrinks" exact component={() => <NewAgeDrinks/>}/>
+        </Switch>
+        <Footer/>
+        <BackToTop/>
+      </Router>
     </div>
   );
 }

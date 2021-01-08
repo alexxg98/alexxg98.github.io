@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../images/logo.png';
-import downArrow from '../images/downArrow.png';
+import { Logo, DownArrow } from '../images';
 import '../scss/App.scss';
 import '../scss/_home.scss';
 
@@ -10,7 +9,7 @@ export default class Home extends Component {
 
       <div className="index-container" id="HomeSec">
         <div className="logo-container">
-          <img src={logo} alt="logo" id="index_logo" />
+          <img src={Logo} alt="logo" id="index_logo" />
         </div>
         <div id="introText">
           <h1 id="introName"> Hi! I'm <span>Alexandria</span>. </h1>
@@ -19,7 +18,7 @@ export default class Home extends Component {
         </div>
 
         <div id="downArrow">
-          <a href="#AboutSec"> <img src={downArrow} alt="Down to About Section"/> </a>
+          <a href="#AboutSec"> <img src={DownArrow} alt="Down to About Section"/> </a>
         </div>
       </div>
 

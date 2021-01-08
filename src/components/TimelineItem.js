@@ -1,4 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
+const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
 
 const TimelineItem = ({ data }) => (
   <div className = "timeline-item">
@@ -8,7 +13,9 @@ const TimelineItem = ({ data }) => (
         {data.company.text}</a> | <span>{data.companyDescription}</span>
       </h6>
       <p> {data.overview} </p>
-      <p className="moreInfo"> <a href={data.link.url}> {data.link.text} </a> </p>
+      <p className="moreInfo" onClick={scrollToTop}>
+        <Link to={data.more}>More Info</Link>
+      </p>
       <span className = "circle" />
     </div>
   </div>

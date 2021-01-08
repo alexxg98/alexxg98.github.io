@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logoW from '../images/logoW.png';
+import { LogoW } from '../images';
 import '../scss/App.scss';
 import '../scss/_navigation.scss';
 
@@ -9,7 +9,7 @@ export default class Home extends Component {
 
       <div className="sidenav">
         <a href="#HomeSec" id="logo_home">
-          <img src={logoW} alt="logo" />
+          <img src={LogoW} alt="logo" />
         </a>
 
         <div className="linkto">

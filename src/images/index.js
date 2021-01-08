@@ -1,6 +1,6 @@
 export { default as Cartoon } from './Cartoon.png';
 export { default as Logo } from './logo.png';
-export { default as LogoW } from './logo.png';
+export { default as LogoW } from './logoW.png';
 export { default as UpArrow } from './upArrow.png';
 export { default as DownArrow } from './downArrow.png';
 
