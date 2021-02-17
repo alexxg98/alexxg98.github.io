@@ -178,7 +178,7 @@
   }
 
   //Left side/ default of timeline
-  .timeline-item{
+  .timeline-item {
     display: block;
     padding-left: 90px;
     padding-right: 0;
@@ -200,7 +200,7 @@
       }
     }
 
-    .timeline-item-content::after{
+    .timeline-item-content::after {
       right: auto;
       left: -9px;
       box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);

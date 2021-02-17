@@ -7,7 +7,7 @@
   margin: 15vh 150px 0;
   box-sizing: border-box;
 
-  .sectionTitle{
+  .sectionTitle {
     width: 100%;
     text-align: center;
     display: block;
@@ -75,7 +75,7 @@
     grid-row: 2;
   }
 
-  .email, .linkedin, .github, .design{
+  .email, .linkedin, .github, .design {
     // border: solid $primary-color 1px;
     padding: 1em 2em;
 
@@ -87,7 +87,7 @@
     }
   }
 
-  #copyrightBar{
+  #copyrightBar {
     width: calc(100% - 150px);
     height: auto;
     margin: 15vh 0 0 0;
@@ -108,7 +108,7 @@
 }
 
 // large Tablet View
-@media (max-width:1024px){
+@media (max-width:1024px) {
   .contact-container{
     height: 70vh;
 
@@ -146,7 +146,7 @@
         }
       }
 
-      .email, .linkedin, .github, .design{
+      .email, .linkedin, .github, .design {
         padding: 1em;
         &:hover {
         background-color: inherit;
@@ -159,7 +159,7 @@
 }
 
 // Tablet View
-@media (max-width:768px){
+@media (max-width:768px) {
   .contact-container{
     p {
       width: 75%;
@@ -176,7 +176,7 @@
 }
 
 // Smartphone View
-@media (max-width:480px){
+@media (max-width:480px) {
   .contact-container{
     width: 100%;
     height: 115vh;
@@ -201,7 +201,7 @@
 }
 
 // Smaller Smartphone View
-@media (max-width:320px){
+@media (max-width:320px) {
   .email, .linkedin, .github, .design {
     padding: 0.6em 2em;
   }

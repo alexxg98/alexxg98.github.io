@@ -1,21 +1,21 @@
 @import 'variables';
 
 /* Index Section */
-.index-container{
+.index-container {
   box-sizing: border-box;
   width: calc(100% - 150px);
   height: 95vh;
   position: relative;
   margin-left: 150px;
 
-  .logo-container{
+  .logo-container {
     position: absolute;
     top: 15%;
     width: 100%;
     height: auto;
     z-index: 2;
 
-    #index_logo{
+    #index_logo {
       height: 60vh;
       width: auto;
       transition: transform 1.5s ease-out;
@@ -43,7 +43,7 @@
       }
     }
 
-    #fading-effect{
+    #fading-effect {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -54,16 +54,16 @@
     }
   }
 
-  &:hover{
-    #fading-effect{
+  &:hover {
+    #fading-effect {
       transform: translateX(-100%);
     }
-    #index_logo{
+    #index_logo {
       transform: translateX(-50%);
     }
   }
 
-  #downArrow{
+  #downArrow {
     position: absolute;
     width:2em;
     height:auto;
@@ -73,25 +73,25 @@
     right: 0;
     display: block;
 
-    img{
+    img {
       width:100%;
     }
   }
 }
 
 // Tablet View
-@media (max-width:768px){
-  .index-container{
-    &:hover{
-      #fading-effect{
+@media (max-width:768px) {
+  .index-container {
+    &:hover {
+      #fading-effect {
         transform: none;
       }
-      #index_logo{
+      #index_logo {
         transform: none;
       }
     }
 
-    .logo-container{
+    .logo-container {
       top: 15%;
       #index_logo {
         width: 50%;
@@ -117,8 +117,8 @@
 }
 
 // Smartphone View
-@media (max-width:480px){
-  .index-container{
+@media (max-width:480px) {
+  .index-container {
     width: 100%;
     height: 100vh;
     margin-left: 0;

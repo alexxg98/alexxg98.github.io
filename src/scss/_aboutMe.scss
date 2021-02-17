@@ -1,20 +1,21 @@
 @import 'variables';
 
 /* About Me Section */
-.aboutMe-container{
+.aboutMe-container {
   width: calc(100% - 150px);
   margin-left: 150px;
   margin-top: 15vh;
+  padding-top: 40px;
   box-sizing: border-box;
 
-  .sectionTitle{
+  .sectionTitle {
     width: 100%;
     text-align: center;
     display: inline-block;
     margin-bottom: 30px;
   }
 
-  .subSections{
+  .subSections {
     color: $primary-color;
     font-weight: $bold-fontsize;
     font-size: 1.2em;
@@ -36,7 +37,7 @@
       text-align: left;
     }
 
-    .cartoon-container{
+    .cartoon-container {
       width: 50%;
       height: auto;
       margin: auto;
@@ -104,13 +105,13 @@
 }
 
 // Large Tablet View
-@media (max-width:1024px){
+@media (max-width:1024px) {
   .aboutMe-container{
     .grid-container-about {
       width: 85%;
       grid-template-columns: 25% 70%;
 
-      .cartoon-container{
+      .cartoon-container {
         width: 100%;
       }
 
@@ -122,13 +123,13 @@
 }
 
 // Tablet View
-@media (max-width:768px){
-  .aboutMe-container{
+@media (max-width:768px) {
+  .aboutMe-container {
     .grid-container-about {
       width: 80%;
       display: block;
 
-      .cartoon-container{
+      .cartoon-container {
         width: 50%;
         margin-bottom: 2em;
       }
@@ -142,7 +143,7 @@
 }
 
 // Smartphone View
-@media (max-width:480px){
+@media (max-width:480px) {
   .aboutMe-container{
     width: 100%;
     margin-left: 0;

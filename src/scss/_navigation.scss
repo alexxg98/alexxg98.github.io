@@ -13,7 +13,7 @@
   padding-top: 20px;
   color: white;
 
-  #logo_home{
+  #logo_home {
     padding: 0;
 
     img{
@@ -24,7 +24,7 @@
   }
 
   .linkto, .backto {
-    a {
+    a, p {
       padding: 6px 8px 6px 26px;
       text-decoration: none;
       font-family: $heading-font;
@@ -32,17 +32,16 @@
       font-size: 1.2em;
       color: white;
       display: block;
-
-      &:hover {
-        text-decoration: none;
-        color: white;
-      }
+    }
+    a:hover {
+      text-decoration: none;
+      color: $secondary-color;
     }
   }
 }
 
 // Smartphone View
-@media (max-width:480px){
+@media (max-width:480px) {
   .sidenav {
     width: 100%;
     padding: 0.2em 0;
@@ -87,7 +86,7 @@
 }
 
 //Smaller Smartphone View
-@media (max-width:320px){
+@media (max-width:320px) {
   .sidenav {
     a {
       padding: 3px;

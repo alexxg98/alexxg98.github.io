@@ -5,12 +5,12 @@
   height: 100%;
 }
 
-img{
+img {
   width: 100%;
   height: 100%;
 }
 
-.sectionTitle{
+.sectionTitle {
   font-family: $heading-font;
   font-weight: $reg-fontsize;
   font-size: 2em;
@@ -50,7 +50,7 @@ p, a, li {
   }
 }
 
-.footer-container{
+.footer-container {
   width: calc(100% - 150px);
   height: auto;
   margin-left: 150px;
@@ -70,7 +70,7 @@ p, a, li {
 }
 
 // Smartphone View
-@media (max-width:480px){
+@media (max-width:480px) {
   .footer-container {
     width: 100%;
     margin-left: 0;

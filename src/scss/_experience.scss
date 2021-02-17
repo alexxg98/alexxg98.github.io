@@ -1,10 +1,11 @@
 @import 'variables';
 
 /* Experience Section */
-.experience-container{
+.experience-container {
   width: calc(100% - 150px);
   margin-left: 150px;
   margin-top: 15vh;
+  padding-top: 40px;
   box-sizing: border-box;
 
   .sectionTitle {
@@ -36,8 +37,8 @@
 }
 
 // Tablet View
-@media (max-width:768px){
-  .experience-container{
+@media (max-width:768px) {
+  .experience-container {
     .sectionTitle {
       text-align: center;
       width: 75%;
@@ -55,8 +56,8 @@
 }
 
 // Smartphone View
-@media (max-width:480px){
-  .experience-container{
+@media (max-width:480px) {
+  .experience-container {
     width: 100%;
     margin-left: 0;
     //Offset fixed navbar when directing to section

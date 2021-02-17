@@ -5,6 +5,7 @@
   width: calc(100% - 150px);
   margin-left: 150px;
   margin-top: 15vh;
+  padding-top: 40px;
   box-sizing: border-box;
 
   .sectionTitle {
@@ -115,7 +116,7 @@
     margin-right: 0.5em;
   }
 
-  #sourceCode{
+  #sourceCode {
     display: inline-block;
     background-color: inherit;
     color: $secondary-color;
@@ -124,7 +125,7 @@
     width: auto;
     cursor: pointer;
 
-    a{
+    a {
       text-decoration: none;
       color: $secondary-color;
     }
@@ -158,8 +159,8 @@
 }
 
 // LargeTablet View
-@media (max-width:1024px){
-  .projects-container{
+@media (max-width:1024px) {
+  .projects-container {
     .sectionTitle {
       text-align: center;
       width: 75%;
@@ -172,7 +173,7 @@
         padding-right: 0;
       }
 
-      #sourceCode{
+      #sourceCode {
         margin-bottom: 4em;
 
         a::after {
@@ -200,11 +201,11 @@
         }
       }
 
-      .projInfo{
+      .projInfo {
         margin-top: 2em;
       }
 
-      #sourceCode{
+      #sourceCode {
         a::after {
           content: ' \00bb';
         }
@@ -214,8 +215,8 @@
 }
 
 // Tablet View
-@media (max-width:768px){
-  .projects-container{
+@media (max-width:768px) {
+  .projects-container {
     .grid-container-coursework {
       display: block;
       width: 80%;
@@ -228,8 +229,8 @@
 }
 
 // Smartphone View
-@media (max-width:480px){
-  .projects-container{
+@media (max-width:480px) {
+  .projects-container {
     width: 100%;
     margin-left: 0;
     //Offset fixed navbar when directing to section
