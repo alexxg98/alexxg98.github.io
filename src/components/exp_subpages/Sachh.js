@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-import { Link } from "react-router-dom";
-import { LogoW, SachhProtoColor, SachhProtoHome, SachhProtoAbout, SachhProtoWork, SachhProtoHomeMobile, SachhProtoFounderMobile, SachhHome, SachhFounder, SachhNews } from '../images';
-import '../scss/App.scss';
-import '../scss/_navigation.scss';
-import '../scss/_workExp.scss';
+import { LogoW, SachhProtoColor, SachhProtoHome, SachhProtoAbout, SachhProtoWork, SachhProtoHomeMobile, SachhProtoFounderMobile, SachhHome, SachhFounder, SachhNews } from '../../images';
+import '../../scss/App.scss';
+import '../../scss/_navigation.scss';
+import '../../scss/_workExp.scss';
 
-const scrollToTop = () => {
-    window.scrollTo(0, 0)
+const backBtn = () => {
+  window.history.back();
 }
 
 export default class Sachh extends Component {
@@ -16,8 +15,8 @@ export default class Sachh extends Component {
       <div className="workExpMore-container">
         <div className="sidenav">
           <img src={LogoW} alt="logo" />
-          <div className="backto" onClick={scrollToTop}>
-            <Link to="/"><p>Back to my main site</p></Link>
+          <div className="backto" onClick={backBtn}>
+            <p>Back to my main site</p>
           </div>
         </div>
 

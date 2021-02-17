@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-import { Link } from "react-router-dom";
-import { LogoW, WxE_process, WxE_reviews, WxE_popup, WxE_proto1, WxE_proto2, WxE_proto3, WxE_proto4 } from '../images';
-import '../scss/App.scss';
-import '../scss/_navigation.scss';
-import '../scss/_workExp.scss';
+import { LogoW, WxE_process, WxE_reviews, WxE_popup, WxE_proto1, WxE_proto2, WxE_proto3, WxE_proto4 } from '../../images';
+import '../../scss/App.scss';
+import '../../scss/_navigation.scss';
+import '../../scss/_workExp.scss';
 
-const scrollToTop = () => {
-    window.scrollTo(0, 0)
+const backBtn = () => {
+  window.history.back();
 }
 
 export default class WestxEast extends Component {
@@ -16,8 +15,8 @@ export default class WestxEast extends Component {
       <div className="workExpMore-container">
         <div className="sidenav">
           <img src={LogoW} alt="logo" />
-          <div className="backto" onClick={scrollToTop}>
-            <Link to="/"><p>Back to my main site</p></Link>
+          <div className="backto" onClick={backBtn}>
+            <p>Back to my main site</p>
           </div>
         </div>
 
