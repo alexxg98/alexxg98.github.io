@@ -41,9 +41,12 @@
       line-height: 1.5em;
       text-align: left;
     }
+    
+    #credTrackInfo {
+      padding-top: 1em;      
+    }
 
-    #credTrackInfo, #theHiveInfo {
-      padding-top: 2em;
+    #rVSaInfo, #credTrackInfo, #theHiveInfo {
       padding-right: 20%;
     }
 

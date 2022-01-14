@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { CreditsTracker, TheHive, DeadZones, HotelAvail, JqProj } from '../images';
+import { CreditsTracker, TheHive, DeadZones, HotelAvail, JqProj, RobotsVsAliens } from '../images';
 import '../scss/App.scss';
 import '../scss/_projects.scss';
 
@@ -30,6 +30,20 @@ export default class Projects extends Component {
         <span className="sectionTitle">Some things I built</span>
 
         <div className="grid-container-coursework">
+          <div className="grid-item projImg">
+            <img src={RobotsVsAliens} alt="Robots Vs Aliens Demo"/>
+          </div>
+          <div className="grid-item" id="rVSaInfo">
+            <p className="projType">Coursework</p>
+            <h6 className="projTitle">Robots vs Aliens</h6>
+            <p>Senior Design project at CCNY. A 2D game built on Unity, based on Plants vs Zombies. The objective is defend the homebase for a certain duration and/or collect enough material to rebuild the shield. </p>
+            <span className="badge badge-dark badge-pill projSoftware"> Unity </span>
+            <span className="badge badge-dark badge-pill projSoftware"> C++ </span>
+            <span className="badge badge-dark badge-pill projSoftware"> Pixel Art </span>
+            <br/><br/><button id="sourceCode"><span><a href="https://alexxg98.github.io/Robots-vs-Aliens/" target="_blank" rel="noopener noreferrer"> DEMO/TUTORIAL </a></span></button>
+            <br/><button id="sourceCode"><span><a href="https://github.com/alexxg98/SD_FinalProject" target="_blank" rel="noopener noreferrer"> SOURCE CODE </a></span></button>            
+          </div>
+          
           <div className="grid-item projImg">
             <img src={CreditsTracker} alt="Credits Tracker Demo"/>
           </div>
