@@ -71,6 +71,10 @@ p, a, li {
 
 // Smartphone View
 @media (max-width:480px) {
+  #topButton {
+    bottom: 2.5em;
+  }
+
   .footer-container {
     width: 100%;
     margin-left: 0;

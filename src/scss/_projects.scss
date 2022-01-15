@@ -33,7 +33,6 @@
     width: 65%;
     height: auto;
     margin: 0.5em auto auto auto;
-    // grid-template-rows: auto auto;
     grid-template-columns: 55% 40%;
     grid-gap: 6em 5%;
 
@@ -41,13 +40,13 @@
       line-height: 1.5em;
       text-align: left;
     }
-    
-    #credTrackInfo {
-      padding-top: 1em;      
+
+    .projInfo {
+      padding-right: 20%;
     }
 
-    #rVSaInfo, #credTrackInfo, #theHiveInfo {
-      padding-right: 20%;
+    #credTrackInfo {
+      padding-top: 1em;      
     }
 
     .projImg {
@@ -119,7 +118,7 @@
     margin-right: 0.5em;
   }
 
-  #sourceCode {
+  #sourceCode, #demoSite {
     display: inline-block;
     background-color: inherit;
     color: $secondary-color;
@@ -172,12 +171,20 @@
     .grid-container-coursework {
       width: 85%;
 
-      #credTrackInfo, #theHiveInfo {
-        padding-right: 0;
+      .grid-item {
+        margin-top: 0;
       }
 
+      .projInfo {
+        padding-right: 0;
+        height: auto;
+      }
+
+      #demoSite a::after{
+        content: '\00bb';
+      }
       #sourceCode {
-        margin-bottom: 4em;
+        margin-bottom: 0;
 
         a::after {
           content: '\00bb';
@@ -188,7 +195,7 @@
     .grid-container-techworks {
       display: block;
       width: 85%;
-      margin: auto;
+      margin-top: 4em;
 
       #selectProj{
         display: inline;
@@ -223,6 +230,10 @@
     .grid-container-coursework {
       display: block;
       width: 80%;
+
+      .projInfo {
+        margin-bottom: 4em;
+      }
     }
 
     .grid-container-techworks {
