@@ -9,6 +9,7 @@ export { default as DeadZones } from './proj_images/deadZones.jpg';
 export { default as HotelAvail } from './proj_images/hotelAvail.JPG';
 export { default as JqProj } from './proj_images/jqProj.JPG';
 export { default as TheHive } from './proj_images/theHive.JPG';
+export { default as RobotsVsAliens } from './proj_images/robotsVsAliens.jfif';
 
 export { default as NadCta } from './work_images/nadCta.JPG';
 export { default as NadHome } from './work_images/nadHome.JPG';

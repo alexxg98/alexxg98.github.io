@@ -25,9 +25,9 @@ export default class AboutMe extends Component {
             <ul>
               <li>HTML & (S)CSS</li>
               <li>Bootstrap</li>
-              <li>Python</li>
-              <li>Java</li>
               <li>ReactJS</li>
+              <li>Python</li>
+              <li>Unity</li>
               <li>InVision</li>
             </ul>
           </div>
@@ -36,10 +36,11 @@ export default class AboutMe extends Component {
             <div className="subSections">Education</div>
             <section className="ccny">
               <p>The City College of New York
-                <span>(Aug 2016 - Present)</span>
+                <span>(Aug 2016 - Dec 2021)</span>
               </p>
-              <p>Computer Science, B.S. | Minor in Art Studio</p>
+              <p>Computer Science, B.S. | Minor in Art Studio and Mathematics</p>
             </section>
+            <div className="subSections">Certificates</div>
             <section className="qcc">
               <p>Queensborough Community College
                 <span>(May 2018 - Jan 2019)</span>
