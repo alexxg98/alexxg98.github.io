@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
 
       <footer className="footer-container">
-        <hr/>Designed &amp; built by Alexandria Guo | 2021
+        <hr/>Designed &amp; built by Alexandria Guo
       </footer>
 
     );

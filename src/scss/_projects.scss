@@ -56,57 +56,59 @@
     }
   }
 
-  .grid-container-techworks {
-    display: grid;
+  .otherProjs-container {
     width: 65%;
     height: auto;
     margin: 6em auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-columns: 20% 75%;
-    grid-gap: 1em 5%;
+    line-height: 1.5em;
+    text-align: left;
 
-    .grid-item {
-      line-height: 1.5em;
-      text-align: left;
-    }
-
-    #techworksTitle {
-      grid-row: 1;
-      grid-column: 1 / span 2;
+    #otherProjsTitle {
       font-size: 1.5em;
-    }
-    button {
-      width: 100%;
-      font-family: $heading-font;
-      font-weight: $bolder-fontsize;
       color: $primary-color;
-      letter-spacing: 1px;
-      border: none;
-      border-left: solid $primary-color 1px;
-      padding: 10px 0 10px 10px;
-      font-size: 1em;
-      text-decoration: none;
-      text-align: left;
-      display: inline-block;
-      background-color: inherit;
-
-      &:hover {
-        background-color: $primary-color;
-        color: $inverse-color;
-      }
     }
-    .projInfo {
-      width: 100%;
-      height: auto;
-      margin: auto;
 
+    .card-deck {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-row-gap: 30px;
+    }
+  
+    .more-project-item {
+      border: 0.5px solid $inverse-color;
+  
       .projTitle {
-        margin: 0;
+        font-size: 16px;
+      }
+  
+      .projType {
+        font-size: 12px;
+      }
+  
+      &:hover {
+        transform: translateY(-0.5em);
       }
 
-      p {
-        padding: 5px;
-        margin-bottom: 0;
+      a {
+        &:link {
+          text-decoration: none;
+        }
+        
+
+        &:hover {
+          .projTitle {
+            color: $secondary-color;
+          }
+          
+        }
+      }
+
+      .card-footer {
+        position: relative;
+        z-index: 2;
+        background-color: transparent;
+        border-top: none;
+        text-align: right;
       }
     }
   }
@@ -192,34 +194,8 @@
       }
     }
 
-    .grid-container-techworks {
-      display: block;
+    .otherProjs-container {
       width: 85%;
-      margin-top: 4em;
-
-      #selectProj{
-        display: inline;
-
-        button {
-          width: auto;
-          font-size: 0.65em;
-          margin-right: 1em;
-          margin-bottom: 1em;
-          padding-right: 1em;
-          border: none;
-          border-top: solid $primary-color 1px;
-        }
-      }
-
-      .projInfo {
-        margin-top: 2em;
-      }
-
-      #sourceCode {
-        a::after {
-          content: ' \00bb';
-        }
-      }
     }
   }
 }
@@ -236,7 +212,7 @@
       }
     }
 
-    .grid-container-techworks {
+    .otherProjs-container {
       width: 80%;
     }
   }
@@ -259,7 +235,7 @@
       width: 75%;
     }
 
-    .grid-container-techworks {
+    .otherProjs-container {
       width: 75%;
     }
   }

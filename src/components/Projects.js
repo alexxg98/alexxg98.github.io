@@ -1,27 +1,11 @@
 import React, {Component} from 'react';
-import { CreditsTracker, TheHive, DeadZones, HotelAvail, JqProj, RobotsVsAliens } from '../images';
+import OtherProjects from './OtherProjects';
+import projData from '../projData';
+import { CreditsTracker, TheHive, RobotsVsAliens } from '../images';
 import '../scss/App.scss';
 import '../scss/_projects.scss';
 
 export default class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      index: 0,
-      img_path: [DeadZones, HotelAvail, JqProj],
-      img_alt: ["Dead Zone Demo", "Hotel Availability Demo", "Learning JQuery Demo"],
-      title: ["Informative Website", "Learning JavaScript", "Learning jQuery"],
-      description: [
-        "This is an informative website I made about dead zones. The site includes one (1) index and three (3) subpages which are all linked. The goal of this project is to utilize all the CSS techniques we had learned, such as transitions and hover.",
-
-        "This website consists of 10 (ten) users that randomly selects 1 (one) out of the four (four) available hotels. Using the selctions, the program will update the information about each hotels' rooms booked and still available.",
-
-        "This is a simple portfolio site that demonstrate the jQuery I learned during the program. Comprising of five mini-projects, each one shows the use of different methods after being clicked on."
-      ],
-      url_link: ["https://alexxg98.github.io/Dead_Zones/", "https://alexxg98.github.io/Hotel_Reservation/", "https://alexxg98.github.io/Learning-jQuery/"],
-      git_link: ["https://github.com/alexxg98/Dead_Zones", "https://github.com/alexxg98/Hotel_Reservation", "https://github.com/alexxg98/Learning-jQuery"]
-    };
-  }
   render(){
 
     return (
@@ -69,27 +53,13 @@ export default class Projects extends Component {
           </div>
         </div>
 
-        <div className="grid-container-techworks">
-          <div className="grid-item" id="techworksTitle">
-            <p>Featured projects from CUNY TechWorks</p>
+        <div className="otherProjs-container">
+          <div id="otherProjsTitle">
+            <p>Other Noteworthy Projects</p>
           </div>
-
-          <div className="grid-item" id="selectProj">
-            <button onClick={() => this.setState({index: 0})}>Dead Zones</button>
-            <button onClick={() => this.setState({index: 1})}>Hotel Availability</button>
-            <button onClick={() => this.setState({index: 2})}>Learning JQuery</button>
-          </div>
-
-          <div className="grid-item projInfo">
-            <h6 className="projTitle">{this.state.title[this.state.index]}</h6>
-            <p>{this.state.description[this.state.index]}</p>
-            <button id="sourceCode">
-              <span><a href={this.state.git_link[this.state.index]} target="_blank" rel="noopener noreferrer">SOURCE CODE</a></span>
-            </button>
-            <a href={this.state.url_link[this.state.index]}>
-              <img src={this.state.img_path[this.state.index]} alt={this.state.img_alt[this.state.index]} />
-            </a>
-          </div>
+          
+          <OtherProjects data={projData} />
+          
         </div>
 
       </div>
