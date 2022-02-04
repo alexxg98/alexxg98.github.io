@@ -1,3 +1,41 @@
+import { CreditsTracker, TheHive, RobotsVsAliens } from './images';
+
+let featProjs = [
+    {
+        projName: "Robots Vs Aliens",
+        projType: "Coursework",
+        projDesc: "Senior Design project at CCNY. A 2D game built on Unity, based on Plants vs Zombies. The objective is defend the homebase for a certain duration and/or collect enough material to rebuild the shield.",
+        projImg: RobotsVsAliens,
+        projSoftware: ['Unity', 'C++', "Pixel Art"],
+        url: {
+            github: 'https://github.com/alexxg98/SD_FinalProject',
+            site: 'https://alexxg98.github.io/Robots-vs-Aliens/',
+        }
+    },
+    {
+        projName: "Credits Tracking App",
+        projType: "Coursework",
+        projDesc: "Final project for Software Design course at CCNY. An Android app for CCNY Computer Science students. The app records the courses the student has taken, are in the process of taking, and have not taken yet.",
+        projImg: CreditsTracker,
+        projSoftware: ["Android Studio", 'Java'],
+        url: {
+            github: 'https://github.com/alexxg98/Credits_Tracker',
+            site: '',
+        }
+    },
+    {
+        projName: "Project Management System",
+        projType: "Coursework",
+        projDesc: "Final project for Software Engineering course at CCNY. This system will facilitate active teaming of people with similar interest and skill-set to forge groups for a certain do-good project.",
+        projImg: TheHive,
+        projSoftware: ['MySQL', 'Python'],
+        url: {
+            github: 'https://github.com/alexxg98/The-Hive',
+            site: '',
+        }
+    },
+]
+
 let otherProjs = [
     {
         projName: "Women in CS, Timeline",
@@ -46,4 +84,4 @@ let otherProjs = [
     },
 ]
 
-export default otherProjs;
+export { featProjs, otherProjs };
