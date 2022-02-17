@@ -6,7 +6,7 @@ let workData = [
       text: "New Age Drinks"
     },
     companyDescription: "Beverage Startup",
-    startDate: "April 2019",
+    startEndDate: "April \u2013 July 2019",
     overview: "I researched, wireframed and mapped the design layout for a new site and implemented the website using WordPress. The design focused on gathering interest for the new product.",
     more: "/NewAgeDrinks"
   },
@@ -17,7 +17,7 @@ let workData = [
       text: "WESTxEAST"
     },
     companyDescription: "Fashion Startup",
-    startDate: "July 2019",
+    startEndDate: "July \u2013 August 2019",
     overview: "I researched and wireframed a layout for their website and implemented the changes using Wix. I made sure all the neccesary information was included on their homepage; and designed a gallery page that is more organized.",
     more: "/WestxEast"
   },
@@ -28,7 +28,7 @@ let workData = [
       text: "The Sachh Foundation"
     },
     companyDescription: "Non-Profit",
-    startDate: "June 2020",
+    startEndDate: "June \u2013 September 2020",
     overview: "I researched, wireframed and mapped the design layout for a new site and implemented the website collaboratively using Wix. We focused on organizing and displaying the content in an appealing way to showcase the foundation's success.",
     more: "/Sachh"
   }

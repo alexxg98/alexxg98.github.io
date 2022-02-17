@@ -11,7 +11,7 @@ const scrollToTop = () => {
 const TimelineItem = ({ data }) => (
   <div className = "timeline-item">
     <div className = "timeline-item-content">
-      <time> {data.startDate} </time>
+      <time> {data.startEndDate} </time>
       <h6> <a href={data.company.url}>
         {data.company.text}</a> | <span>{data.companyDescription}</span>
       </h6>

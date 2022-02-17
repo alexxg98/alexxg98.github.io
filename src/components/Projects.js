@@ -34,7 +34,7 @@ const MoreProjectItem = ({ data }) => (
       </a>
       <p> {data.projDesc} </p>
     </div>
-    <div class="card-footer">
+    <div className="card-footer">
       <button id="sourceCode"><span><a href={data.url.github} target="_blank" rel="noopener noreferrer"> SOURCE CODE </a></span></button>
     </div>
   </div>
