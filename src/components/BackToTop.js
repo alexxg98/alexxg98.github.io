@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { UpArrow } from '../images/';
+import { UpArrowIcon } from '../images/arrows.js';
 
 function BackToTop() {
   const [show, setShow] = useState(false);
@@ -15,7 +15,7 @@ function BackToTop() {
     <div>
       {show && (
         <button id="topButton" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-          <img src={UpArrow} alt="Back to top"/>
+          <UpArrowIcon />
         </button>
       )}
     </div>

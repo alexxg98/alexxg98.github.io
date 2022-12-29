@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import { featProjs, otherProjs } from '../projData';
+import ExternalIcon from '../images/external.js';
+import GitHubIcon from '../images/github.js';
 import '../scss/App.scss';
 import '../scss/_projects.scss';
 
@@ -17,10 +19,9 @@ const FeatProjectItem = ({ data }) => (
       ))}
       <br /><br />
       {data.url.site !== ''
-        && <button id="demoSite"><span><a href={data.url.site} target="_blank" rel="noopener noreferrer"> DEMO/TUTORIAL </a></span></button>
+        && <a id="demoSite" role="button" href={data.url.site} target="_blank" rel="noopener noreferrer"><ExternalIcon /></a>
       }
-      <br />
-      <button id="sourceCode"><span><a href={data.url.github} target="_blank" rel="noopener noreferrer"> SOURCE CODE </a></span></button>
+      <a id="sourceCode" role="button" href={data.url.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
     </div>
   </>
 );
@@ -35,7 +36,7 @@ const MoreProjectItem = ({ data }) => (
       <p> {data.projDesc} </p>
     </div>
     <div className="card-footer">
-      <button id="sourceCode"><span><a href={data.url.github} target="_blank" rel="noopener noreferrer"> SOURCE CODE </a></span></button>
+      <a id="sourceCode" role="button" href={data.url.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
     </div>
   </div>
 );

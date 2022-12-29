@@ -46,10 +46,6 @@ $projOutline: 0.5px solid $inverse-color;
       padding-right: 20%;
     }
 
-    #credTrackInfo {
-      padding-top: 1em;      
-    }
-
     .projImg {
       width: 100%;
       height: auto;
@@ -122,43 +118,10 @@ $projOutline: 0.5px solid $inverse-color;
   }
 
   #sourceCode, #demoSite {
-    display: inline-block;
-    background-color: inherit;
-    color: $secondary-color;
-    border: none;
-    font-size: 1.1em;
-    width: auto;
-    cursor: pointer;
-
-    a {
-      text-decoration: none;
-      color: $secondary-color;
-    }
-
-    span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-
-      &:after {
-        content: '\00bb';
-        font-weight: $reg-fontsize;
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-      }
-    }
-
-    &:hover span {
-      padding-right: 25px;
-
-      &:after {
-        opacity: 1;
-        right: 0;
-      }
+    margin-right: 0.5em;
+    text-align: right;
+    svg:hover {
+      stroke: $secondary-color;
     }
   }
 }
@@ -182,16 +145,8 @@ $projOutline: 0.5px solid $inverse-color;
         padding-right: 0;
         height: auto;
       }
-
-      #demoSite a::after{
-        content: '\00bb';
-      }
       #sourceCode {
         margin-bottom: 0;
-
-        a::after {
-          content: '\00bb';
-        }
       }
     }
 
