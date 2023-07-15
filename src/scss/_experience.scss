@@ -2,37 +2,14 @@
 
 /* Experience Section */
 .experience-container {
-  width: calc(100% - 150px);
-  margin-left: 150px;
+  @include body-format;
   margin-top: 15vh;
   padding-top: 40px;
-  box-sizing: border-box;
 
   .sectionTitle {
     width: 65%;
-    height: auto;
     margin: 1em auto;
-    display: block;
-  }
-
-  #resume a {
-    float: right;
-    font-size: 0.5em;
-    text-decoration: none;
-    color: $primary-color;
-    border: solid $primary-color 1.5px;
-    padding: 5px 10px;
-    display: block;
-    position: relative;
-    transition: 0.5s;
-
-    &:hover {
-      text-decoration: none;
-
-      &::after {
-        content: ' \00bb';
-      }
-    }
+    // display: block;
   }
 }
 

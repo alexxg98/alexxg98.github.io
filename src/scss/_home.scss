@@ -2,17 +2,14 @@
 
 /* Index Section */
 .index-container {
-  box-sizing: border-box;
-  width: calc(100% - 150px);
+  @include body-format;
   height: 95vh;
   position: relative;
-  margin-left: 150px;
 
   .logo-container {
     position: absolute;
     top: 15%;
     width: 100%;
-    height: auto;
     z-index: 2;
 
     #index_logo {
@@ -113,7 +110,6 @@
       top: 15%;
       #index_logo {
         width: 50%;
-        height: auto;
       }
     }
 

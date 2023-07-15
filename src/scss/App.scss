@@ -1,5 +1,16 @@
 @import 'variables';
 
+// Change color when selecting text
+::-moz-selection { //firefox
+  color: white;
+  background: $primary-color;
+}
+
+::selection {
+  color: white;
+  background: $secondary-color;
+}
+
 .App {
   position: relative;
   height: 100%;
@@ -31,29 +42,17 @@ p, a, li {
   bottom: 1em;
   right: 30px;
   border: none;
-  outline: none;
   background-color: inherit;
 
-  img {
-    width: 2em;
-    height: auto;
-    float: right;
-    bottom: auto;
-    position: relative;
-    margin-bottom: 35%;
-
-    &:hover {
-      cursor: pointer;
-      width: 2.5em;
-      height: auto;
-    }
+  svg:hover {
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
   }
 }
 
 .footer-container {
-  width: calc(100% - 150px);
-  height: auto;
-  margin-left: 150px;
+  @include body-format;
   position: absolute;
   bottom: 0;
   padding: 20px 0;

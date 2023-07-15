@@ -2,10 +2,7 @@
 
 /* Work Expernece Pages */
 .workExpMore-container {
-  width: calc(100% - 150px);
-  height: 100%;
-  margin-left: 150px;
-  box-sizing: border-box;
+  @include body-format;
   padding-bottom: 100px;
 
   .sidenav {
@@ -65,7 +62,6 @@
 
   .grid-container {
     width: 75%;
-    height: 100%;
     display: grid;
     grid-column-gap: 5%;
     grid-row-gap: 4em;
@@ -76,7 +72,6 @@
 
     .grid-item {
       box-sizing: border-box;
-      height: 100%;
       line-height: 1.5em;
       text-align: left;
     }
@@ -87,7 +82,6 @@
   }
   .finalImgs {
     width: 75%;
-    height: auto;
     margin: auto;
 
     img {
@@ -96,7 +90,6 @@
   }
   .prototype {
     grid-column: 1 / span 2;
-    height: auto;
     margin: 2em 0;
 
     // New Age Drinks Specific

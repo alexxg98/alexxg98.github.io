@@ -2,11 +2,9 @@
 
 /* About Me Section */
 .aboutMe-container {
-  width: calc(100% - 150px);
-  margin-left: 150px;
+  @include body-format;
   margin-top: 15vh;
   padding-top: 40px;
-  box-sizing: border-box;
 
   .sectionTitle {
     width: 100%;
@@ -25,7 +23,6 @@
 
   .grid-container-about {
     width: 65%;
-    height: auto;
     margin: 0.5em auto auto auto;
     display: grid;
     grid-column-gap: 5%;
@@ -39,7 +36,6 @@
 
     .cartoon-container {
       width: 50%;
-      height: auto;
       margin: auto;
       grid-column: 1;
       grid-row: 1 / span 2;

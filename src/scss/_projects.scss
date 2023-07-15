@@ -3,8 +3,7 @@ $projOutline: 0.5px solid $inverse-color;
 
 /* Projects Section */
 .projects-container {
-  width: calc(100% - 150px);
-  margin-left: 150px;
+  @include body-format;
   margin-top: 15vh;
   padding-top: 40px;
   box-sizing: border-box;
