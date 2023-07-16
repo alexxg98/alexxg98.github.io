@@ -18,10 +18,10 @@ const FeatProjectItem = ({ data }) => (
         <span className="badge badge-dark badge-pill projSoftware"> {software} </span>
       ))}
       <br /><br />
+      <a id="sourceCode" role="button" href={data.url.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
       {data.url.site !== ''
         && <a id="demoSite" role="button" href={data.url.site} target="_blank" rel="noopener noreferrer"><ExternalIcon /></a>
       }
-      <a id="sourceCode" role="button" href={data.url.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
     </div>
   </>
 );
@@ -37,6 +37,9 @@ const MoreProjectItem = ({ data }) => (
     </div>
     <div className="card-footer">
       <a id="sourceCode" role="button" href={data.url.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
+      {data.url.site !== ''
+        && <a id="demoSite" role="button" href={data.url.site} target="_blank" rel="noopener noreferrer"><ExternalIcon /></a>
+      }
     </div>
   </div>
 );

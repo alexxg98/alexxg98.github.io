@@ -14,7 +14,7 @@ function BackToTop() {
   return (
     <div>
       {show && (
-        <button id="topButton" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+        <button id="topButton" type="button" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
           <UpArrowIcon />
         </button>
       )}
