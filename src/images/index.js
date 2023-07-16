@@ -1,8 +1,6 @@
 export { default as Cartoon } from './Cartoon.png';
 export { default as Logo } from './logo.png';
 export { default as LogoW } from './logoW.png';
-export { default as UpArrow } from './upArrow.png';
-export { default as DownArrow } from './downArrow.png';
 
 export { default as CreditsTracker } from './proj_images/creditsTracker.png';
 export { default as DeadZones } from './proj_images/deadZones.jpg';

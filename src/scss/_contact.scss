@@ -2,17 +2,16 @@
 
 /* Contact Section */
 .contact-container {
-  width: calc(100% - 150px);
-  height: 100vh;
-  margin: 15vh 150px 0;
+  @include body-format;
+  min-height: 100vh;
+  margin-top: 15vh;
   padding-top: 15vh;
-  box-sizing: border-box;
 
   .sectionTitle {
     width: 100%;
     text-align: center;
     display: block;
-    margin: 0 auto 8px auto;
+    margin: 0 auto 8px;
   }
 
   p {
@@ -23,8 +22,7 @@
 
   .grid-container-contact {
     width: 40%;
-    height: auto;
-    margin: 10vh auto auto auto;
+    margin: 10vh auto;
     display: grid;
     // grid-column-gap: 5%;
     grid-row-gap: 20%;
@@ -87,25 +85,6 @@
     font-size: $light-fontsize;
     }
   }
-
-  #copyrightBar {
-    width: calc(100% - 150px);
-    height: auto;
-    margin: 15vh 0 0 0;
-    position: absolute;
-    bottom: 0;
-    padding: 20px 0;
-    display: block;
-    font-family: $accent-font;
-    font-size: 0.8em;
-    text-align: center;
-    color: $primary-color;
-
-    hr {
-      width: 90%;
-      color: $primary-color;
-    }
-  }
 }
 
 // large Tablet View
@@ -159,18 +138,8 @@
 
 // Tablet View
 @media (max-width:768px) {
-  .contact-container{
-    p {
-      width: 75%;
-    }
-
-    .grid-container-contact {
-      width: 75%;
-    }
-
-    #copyrightBar {
-      margin-top: 10vh;
-    }
+  .contact-container p, .grid-container-contact {
+    width: 75%;
   }
 }
 
@@ -178,7 +147,6 @@
 @media (max-width:480px) {
   .contact-container{
     width: 100%;
-    height: 100vh;
     margin-left: 0;
     //Offset fixed navbar when directing to section
     padding-top: 12vh;
@@ -190,11 +158,6 @@
 
     .grid-container-contact {
       display: block;
-    }
-
-    #copyrightBar {
-      width: 100%;
-      margin-top: 10vh;
     }
   }
 }

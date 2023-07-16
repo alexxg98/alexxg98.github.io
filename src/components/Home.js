@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { Logo, DownArrow } from '../images';
+import { Logo } from '../images';
+import { DownArrowIcon } from '../images/arrows.js';
 import '../scss/App.scss';
 import '../scss/_home.scss';
 
@@ -18,7 +19,7 @@ export default class Home extends Component {
         </div>
 
         <div id="downArrow">
-          <a href="#AboutSec"> <img src={DownArrow} alt="Down to About Section"/> </a>
+          <a href="#AboutSec"> <DownArrowIcon /> </a>
         </div>
       </div>
 

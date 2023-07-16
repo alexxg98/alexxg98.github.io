@@ -9,3 +9,11 @@ $reg-fontsize: 400;
 $bold-fontsize: 500; //medium
 $bolder-fontsize: 700; //bold, karla only
 $testing-color: yellow;
+$body-width: calc(100% - 150px);
+
+// Mixins
+@mixin body-format {
+    width: $body-width;
+    margin-left: 150px;
+    box-sizing: border-box;
+}
