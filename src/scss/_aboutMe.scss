@@ -2,9 +2,7 @@
 
 /* About Me Section */
 .aboutMe-container {
-  @include body-format;
-  margin-top: 15vh;
-  padding-top: 40px;
+  @include container-format-small;
 
   .sectionTitle {
     width: 100%;
@@ -13,21 +11,12 @@
     margin-bottom: 30px;
   }
 
-  .subSections {
-    color: $primary-color;
-    font-weight: $bold-fontsize;
-    font-size: 1.2em;
-    text-transform: capitalize;
-    margin-bottom: 5px;
-  }
-
   .grid-container-about {
-    width: 65%;
-    margin: 0.5em auto auto auto;
     display: grid;
     grid-column-gap: 5%;
-    grid-row-gap: 1%;
-    grid-template-rows: auto auto;
+    grid-row-gap: 5px;
+    width: 85%;
+    margin: 0.5em auto auto auto;
 
     .grid-item {
       line-height: 1.5em;
@@ -41,31 +30,31 @@
       grid-row: 1 / span 2;
     }
 
-    .backgroundText, .skills, .education {
-      margin-left: -95px;
+    .subSections {
+      color: $primary-color;
+      font-weight: $bold-fontsize;
+      font-size: 1.2em;
+      text-transform: capitalize;
+      margin-bottom: 5px;
     }
 
     .backgroundText {
-      grid-column: 2;
-      grid-row: 1;
+      margin-top: 5%;
     }
 
     .skills {
-      grid-column: 2;
-      grid-row: 2;
-
       p {
         margin-bottom: 3px;
       }
 
       ul {
+        list-style-position: inside;
         list-style-type: none;
         padding-left: 0;
         //Display list in two columns
         -webkit-columns: 2;
         -moz-columns: 2;
         columns: 2;
-        list-style-position: inside;
       }
 
       li{
@@ -79,9 +68,6 @@
     }
 
     .education {
-      grid-column: 2;
-      grid-row: 3;
-
       .ccny, .qcc {
         margin-bottom: 8px;
         p {
@@ -100,60 +86,36 @@
   }
 }
 
-// Large Tablet View
-@media (max-width:1024px) {
-  .aboutMe-container{
-    .grid-container-about {
-      width: 85%;
-      grid-template-columns: 25% 70%;
-
-      .cartoon-container {
-        width: 100%;
-      }
-
-      .backgroundText, .skills, .education {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
 // Tablet View
-@media (max-width:768px) {
+@media (min-width:768px) {
   .aboutMe-container {
-    .grid-container-about {
-      width: 80%;
-      display: block;
-
-      .cartoon-container {
-        width: 50%;
-        margin-bottom: 2em;
-      }
-
-      .backgroundText, .skills, .education {
-        width: 100%;
-        margin-top: 5%;
-      }
-    }
+    @include container-format-large;
   }
 }
 
-// Smartphone View
-@media (max-width:480px) {
-  .aboutMe-container{
-    width: 100%;
-    margin-left: 0;
-    //Offset fixed navbar when directing to section
-    padding-top: 10vh;
-    margin-top: 0;
+// Large Tablet View
+@media (min-width:1024px) {
+  .aboutMe-container .grid-container-about {
+    grid-template-columns: 25% 70%;
 
-    .grid-container-about {
-      width: 85%;
+    .cartoon-container {
+      width: 100%;
+    }
 
-      .backgroundText, .skills, .education {
-        margin-top: 10%;
-      }
+    .backgroundText {
+      grid-column: 2;
+      grid-row: 1;
+      margin-top: 0;;
+    }
 
+    .skills {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .education {
+      grid-column: 2;
+      grid-row: 3;
     }
   }
 }

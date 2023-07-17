@@ -12,7 +12,15 @@ $testing-color: yellow;
 $body-width: calc(100% - 150px);
 
 // Mixins
-@mixin body-format {
+@mixin container-format-small {
+    width: 100%;
+    margin-left: 0;
+    //Offset fixed navbar when directing to section
+    padding-top: 10vh;
+    margin-top: 0;
+}
+
+@mixin container-format-large {
     width: $body-width;
     margin-left: 150px;
     box-sizing: border-box;
