@@ -15,7 +15,7 @@ const TimelineItem = ({ data }) => (
       <h6> <a href={data.company.url}>
         {data.company.text}</a> | <span>{data.companyDescription}</span>
       </h6>
-      <p> {data.overview} </p>
+      <p className="expOverview"> {data.overview} </p>
       <p className="moreInfo">
         <Link to={data.more} onClick={scrollToTop}>More Info</Link>
       </p>
