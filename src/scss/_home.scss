@@ -3,7 +3,7 @@
 /* Index Section */
 .index-container {
   position: relative;
-  height: 95vh;
+  min-height: 95vh;
   padding-top: 45%;
 
   .logo-container #index_logo {
@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width:768px) and (hover: hover) {
+@media (min-width:1024px) and (hover: hover) {
   .index-container {
     padding-top: 0;
 
@@ -68,11 +68,13 @@
     }
 
     #introText {
-      position: relative;
+      position: absolute;
       z-index: 1;
-      width: min-content;
+      width: 60ch;
       top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-25%, -50%);
+      text-align: left;
   
       #fading-effect {
         position: absolute;
