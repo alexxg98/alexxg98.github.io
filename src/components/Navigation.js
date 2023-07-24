@@ -8,7 +8,7 @@ export default class Home extends Component {
     return (
 
       <div className="sidenav">
-        <a href="#HomeSec" id="logo_home">
+        <a href="#HomeSec">
           <img src={LogoW} alt="logo" />
         </a>
 
