@@ -13,7 +13,7 @@ export default class Sachh extends Component {
     return (
 
       <>
-        <div className="sidenav">
+        <div className="sidenav subnav">
           <img src={LogoW} alt="logo" />
           <div className="backto" onClick={backBtn}>
             <p>Back to my main site</p>

@@ -56,10 +56,9 @@
     }
 
     .linkto {
+      position: unset;
       display: grid;
       height: auto;
-      top: auto;
-      right: auto;
 
       a {
         padding: 6px 8px 6px 26px;

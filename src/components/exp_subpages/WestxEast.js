@@ -12,7 +12,7 @@ export default class WestxEast extends Component {
   render(){
     return (
       <>
-        <div className="sidenav">
+        <div className="sidenav subnav">
           <img src={LogoW} alt="logo" />
           <div className="backto" onClick={backBtn}>
             <p>Back to my main site</p>

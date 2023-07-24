@@ -1,10 +1,6 @@
 @import 'variables';
 
 .sidenav {
-  img{
-    float: right;
-  }
-
   .backto {
     display: flex;
     height: 100%;
@@ -24,6 +20,10 @@
       }
     }
   }
+}
+
+.subnav img {
+  float: right;
 }
 
 /* Work Expernece Pages */
