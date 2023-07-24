@@ -53,11 +53,15 @@
 @media (min-width:768px) {
   .contact-container {
     @include container-format-large;
+    margin-bottom: 15vh;
 
     .grid-container-contact {
       width: min-content;
-      grid-row-gap: 20%;
       grid-template-columns: repeat(2, minmax(30ch, 25%));
+
+      .grid-item {
+        margin-bottom: 15%;
+      }
     }
   }
 }
