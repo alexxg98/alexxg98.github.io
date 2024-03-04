@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width:1024px) and (hover: hover) {
+@media (min-width:1024px) {
   .index-container {
     padding-top: 0;
 
@@ -85,14 +85,16 @@
         transition: transform 1.5s linear;
       }
     }
+  }
+}
 
-    &:hover {
-      #fading-effect {
-        transform: translateX(-100%);
-      }
-      #index_logo {
-        transform: translateX(-50%);
-      }
+@media (hover: hover) {
+  .index-container:hover {
+    #fading-effect {
+      transform: translateX(-100%);
+    }
+    #index_logo {
+      transform: translateX(-50%);
     }
   }
 }
