@@ -23,7 +23,7 @@ img {
 
 .sectionTitle {
   font-family: $heading-font;
-  font-weight: $reg-fontsize;
+  font-weight: $reg-fontweight;
   font-size: 2em;
   color: $primary-color;
   text-transform: uppercase;
@@ -32,7 +32,7 @@ img {
 
 p, a, li {
   font-family: $primary-font;
-  font-weight: $reg-fontsize;
+  font-weight: $reg-fontweight;
   font-size: 1em;
 }
 
@@ -46,17 +46,12 @@ p, a, li {
 
   svg:hover {
     cursor: pointer;
-    width: 56px;
-    height: 56px;
+    transform: translateY(-0.5em);
   }
 }
 
 .footer-container {
-  @include body-format;
-  position: absolute;
-  bottom: 0;
   padding: 20px 0;
-  display: block;
   font-family: $accent-font;
   font-size: 0.8em;
   text-align: center;
@@ -69,13 +64,12 @@ p, a, li {
 }
 
 // Smartphone View
-@media (max-width:480px) {
+@media (min-width:768px) {
   #topButton {
     bottom: 2.5em;
   }
 
   .footer-container {
-    width: 100%;
-    margin-left: 0;
+    @include container-format-large;
   }
 }

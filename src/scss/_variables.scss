@@ -4,15 +4,23 @@ $inverse-color: #edc1c8;
 $primary-font: 'Karla', sans-serif;
 $heading-font: 'Montserrat', sans-serif;
 $accent-font: 'Poppins', sans-serif;
-$light-fontsize: 300;
-$reg-fontsize: 400;
-$bold-fontsize: 500; //medium
-$bolder-fontsize: 700; //bold, karla only
+$light-fontweight: 300;
+$reg-fontweight: 400;
+$bold-fontweight: 500; //medium
+$bolder-fontweight: 700; //bold, karla only
 $testing-color: yellow;
 $body-width: calc(100% - 150px);
 
 // Mixins
-@mixin body-format {
+@mixin container-format-small {
+    width: 100%; //change to 85%
+    margin-left: 0;
+    //Offset fixed navbar when directing to section
+    padding-top: 10vh;
+    margin-top: 0;
+}
+
+@mixin container-format-large {
     width: $body-width;
     margin-left: 150px;
     box-sizing: border-box;

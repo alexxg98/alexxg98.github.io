@@ -2,51 +2,16 @@
 
 /* Experience Section */
 .experience-container {
-  @include body-format;
-  margin-top: 15vh;
-  padding-top: 40px;
+  @include container-format-small;
 
   .sectionTitle {
-    width: 65%;
-    margin: 1em auto;
-    // display: block;
+    text-align: center;
   }
 }
 
 // Tablet View
-@media (max-width:768px) {
+@media (min-width:768px) {
   .experience-container {
-    .sectionTitle {
-      text-align: center;
-      width: 75%;
-    }
-
-    #resume {
-      display: inline-block;
-      margin-top: 5%;
-
-      a::after {
-        content: ' \00bb';
-      }
-    }
-  }
-}
-
-// Smartphone View
-@media (max-width:480px) {
-  .experience-container {
-    width: 100%;
-    margin-left: 0;
-    //Offset fixed navbar when directing to section
-    padding-top: 5vh;
-    margin-top: 0;
-
-    .sectionTitle {
-      width: 50%;
-    }
-
-    #resume {
-      margin-top: 10%;
-    }
+    @include container-format-large;
   }
 }

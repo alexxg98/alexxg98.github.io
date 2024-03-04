@@ -2,134 +2,47 @@
 
 /* Contact Section */
 .contact-container {
-  @include body-format;
-  min-height: 100vh;
   margin-top: 15vh;
-  padding-top: 15vh;
 
   .sectionTitle {
-    width: 100%;
+    width: 85%;
     text-align: center;
     display: block;
     margin: 0 auto 8px;
   }
 
   p {
-    width: 50%;
+    width: 85%;
     margin: auto;
     text-align: center;
   }
 
   .grid-container-contact {
-    width: 40%;
-    margin: 10vh auto;
     display: grid;
-    // grid-column-gap: 5%;
-    grid-row-gap: 20%;
-    grid-template-columns: 55% 55%;
-    grid-template-rows: auto auto auto;
+    width: 85%;
+    margin: 25px auto;
 
     .grid-item {
       line-height: 1.5em;
-    }
+      padding: 5%;
 
-    a {
-      color: inherit;
-
-      &:hover {
-        text-decoration: none;
-        color: $inverse-color;
-
-        p::after {
-          content: ' \00bb';
-        }
-      }
-
-      h6 {
-        font-family: $heading-font;
-      }
-
-      p {
-        width: 100%;
-        text-align: left;
-        margin: 0;
-      }
-    }
-  }
-
-  .email {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .linkedin {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .github {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .design {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .email, .linkedin, .github, .design {
-    // border: solid $primary-color 1px;
-    padding: 1em 2em;
-
-    &:hover {
-    // transform: translateY(-10%);
-    background-color: $primary-color;
-    color: $inverse-color;
-    font-size: $light-fontsize;
-    }
-  }
-}
-
-// large Tablet View
-@media (max-width:1024px) {
-  .contact-container{
-    .sectionTitle {
-      width: 75%;
-    }
-
-    p {
-      width: 65%;
-    }
-
-    .grid-container-contact {
-      width: 65%;
-      margin: 2vh auto auto;
-
-      .grid-item {
-        width: 100%;
-        height: auto;
-
-        p{
-          color: $secondary-color;
-        }
-      }
-
-      // No hover effects
       a {
+        text-decoration: none;
         color: inherit;
 
-        p::after {
-          content: ' \00bb';
+        h6 {
+          font-family: $heading-font;
         }
+  
+        p {
+          width: 100%;
+          margin: 0;
+          text-align: left;
+          color: $secondary-color;
 
-        &:hover {
-          color: inherit;
-        }
-      }
-
-      .email, .linkedin, .github, .design {
-        padding: 1em;
-        &:hover {
-        background-color: inherit;
-        color: inherit;
-        font-size: inherit;
+          &::after {
+            content: ' \00bb';
+          }
         }
       }
     }
@@ -137,34 +50,30 @@
 }
 
 // Tablet View
-@media (max-width:768px) {
-  .contact-container p, .grid-container-contact {
-    width: 75%;
-  }
-}
-
-// Smartphone View
-@media (max-width:480px) {
-  .contact-container{
-    width: 100%;
-    margin-left: 0;
-    //Offset fixed navbar when directing to section
-    padding-top: 12vh;
-    margin-top: 5vh;
-
-    p {
-      width: 85%;
-    }
+@media (min-width:768px) {
+  .contact-container {
+    @include container-format-large;
+    margin-bottom: 15vh;
 
     .grid-container-contact {
-      display: block;
+      width: min-content;
+      grid-template-columns: repeat(2, minmax(30ch, 25%));
+
+      .grid-item {
+        margin-bottom: 15%;
+      }
     }
   }
 }
 
-// Smaller Smartphone View
-@media (max-width:320px) {
-  .email, .linkedin, .github, .design {
-    padding: 0.6em 2em;
+@media (hover: hover) {
+  .contact-container .grid-container-contact {
+    .grid-item:hover {
+      background-color: $primary-color;
+      a h6, p{
+        color: $inverse-color;
+      }
+     
+    }
   }
 }
