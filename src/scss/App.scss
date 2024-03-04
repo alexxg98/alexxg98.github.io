@@ -23,7 +23,7 @@ img {
 
 .sectionTitle {
   font-family: $heading-font;
-  font-weight: $reg-fontsize;
+  font-weight: $reg-fontweight;
   font-size: 2em;
   color: $primary-color;
   text-transform: uppercase;
@@ -32,7 +32,7 @@ img {
 
 p, a, li {
   font-family: $primary-font;
-  font-weight: $reg-fontsize;
+  font-weight: $reg-fontweight;
   font-size: 1em;
 }
 

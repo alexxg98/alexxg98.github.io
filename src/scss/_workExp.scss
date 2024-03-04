@@ -33,7 +33,7 @@
 
   h2, h3 {
     font-family: $heading-font;
-    font-weight: $bold-fontsize;
+    font-weight: $bold-fontweight;
     letter-spacing: 1px;
     color: $primary-color;
     text-transform: uppercase;
@@ -46,7 +46,7 @@
 
     .position {
       font-family: $heading-font;
-      font-weight: $bold-fontsize;
+      font-weight: $bold-fontweight;
       font-size: 2em;
       letter-spacing: 2px;
     }
@@ -57,7 +57,7 @@
 
     span a {
       color: $primary-color;
-      font-weight: $bolder-fontsize;
+      font-weight: $bolder-fontweight;
     }
   }
 
@@ -91,7 +91,7 @@
   // WESTxEAST Specific
   .goal span {
     color: $primary-color;
-    font-weight: $bolder-fontsize;
+    font-weight: $bolder-fontweight;
   }
 
   .grid-container-researchInner {
@@ -183,7 +183,7 @@
     // WESTxEAST Specific
     .goal span {
       color: $primary-color;
-      font-weight: $bolder-fontsize;
+      font-weight: $bolder-fontweight;
     }
 
     .grid-container-researchInner {
