@@ -3,16 +3,13 @@ $projOutline: 0.5px solid $inverse-color;
 
 /* Projects Section */
 .projects-container {
-  @include body-format;
-  margin-top: 15vh;
+  // @include container-format-small;
+  width: 85%;
+  margin: 15vh auto 0;
   padding-top: 40px;
-  box-sizing: border-box;
 
   .sectionTitle {
-    width: 65%;
-    height: auto;
-    margin: 1em auto;
-    display: block;
+    text-align: center;
   }
 
   .projType {
@@ -21,53 +18,45 @@ $projOutline: 0.5px solid $inverse-color;
   }
   .projTitle {
     font-family: $heading-font;
-    font-weight: $bolder-fontsize;
+    font-weight: $bolder-fontweight;
     color: $primary-color;
     font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 1em;
   }
 
+  .projLink {
+    margin-right: 0.5em;
+  }
+
   .grid-container-coursework {
-    display: grid;
-    width: 65%;
-    height: auto;
-    margin: 0.5em auto auto auto;
-    grid-template-columns: 55% 40%;
-    grid-gap: 6em 5%;
+    margin: 2em auto auto;
 
     .grid-item {
+      border: $projOutline;
+      padding: 1.25em;
       line-height: 1.5em;
-      text-align: left;
-    }
-
-    .projInfo {
-      padding-right: 20%;
     }
 
     .projImg {
-      width: 100%;
-      height: auto;
-      margin: auto;
+      border-radius: 0.25em 0.25em 0 0;
+      border-bottom: white;
+    }
+
+    .projInfo {
+      border-radius: 0 0 0.25em 0.25em;
+      border-top: white;
+      margin-bottom: 30px;
     }
   }
 
   .otherProjs-container {
-    width: 65%;
-    height: auto;
-    margin: 6em auto auto auto;
+    margin: 6em auto auto;
     line-height: 1.5em;
-    text-align: left;
 
     #otherProjsTitle {
       font-size: 1.5em;
       color: $primary-color;
-    }
-
-    .card-deck {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      grid-row-gap: 30px;
     }
   
     .more-project-item {
@@ -80,28 +69,12 @@ $projOutline: 0.5px solid $inverse-color;
       .projType {
         font-size: 12px;
       }
-  
-      &:hover {
-        transform: translateY(-0.5em);
-      }
 
-      a {
-        &:link {
-          text-decoration: none;
-        }
-        
-
-        &:hover {
-          .projTitle {
-            color: $secondary-color;
-          }
-          
-        }
+      a:link {
+        text-decoration: none;
       }
 
       .card-footer {
-        position: relative;
-        z-index: 2;
         background-color: transparent;
         border-top: none;
         text-align: right;
@@ -115,94 +88,75 @@ $projOutline: 0.5px solid $inverse-color;
     padding: 1em;
     margin-right: 0.5em;
   }
+}
 
-  #sourceCode, #demoSite {
-    margin-right: 0.5em;
-    text-align: right;
-    svg:hover {
-      stroke: $secondary-color;
+// Tablet View
+@media (min-width:768px) {
+  .projects-container {
+    @include container-format-large;
+
+    .grid-container-coursework {
+      width: 85%;
+    }
+
+    .otherProjs-container {
+      width: 85%;
+
+      .card-deck {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-row-gap: 30px;
+      }
     }
   }
 }
 
 // LargeTablet View
-@media (max-width:1024px) {
-  .projects-container {
-    .sectionTitle {
-      text-align: center;
-      width: 75%;
+@media (min-width:1024px) {
+  .projects-container .grid-container-coursework {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    grid-gap: 6em 5%;
+
+    .grid-item {
+      border: none;
+      padding: 0;
     }
 
-    .grid-container-coursework {
-      width: 85%;
-
-      .grid-item {
-        margin-top: 0;
-      }
-
-      .projInfo {
-        padding-right: 0;
-        height: auto;
-      }
-      #sourceCode {
-        margin-bottom: 0;
-      }
+    .projImg {
+      margin: auto;
     }
 
-    .otherProjs-container {
-      width: 85%;
+    .projInfo {
+      padding-right: 20%;
     }
   }
 }
 
-// Tablet View
-@media (max-width:768px) {
+@media (hover: hover) {
   .projects-container {
-    .grid-container-coursework {
-      display: block;
-      width: 80%;
+    .otherProjs-container {
+      .more-project-item {
+        &:hover {
+          transform: translateY(-0.5em);
+        }
 
-      .projImg {
-        border: $projOutline;
-        border-radius: 0.25em 0.25em 0 0;
-        border-bottom: white;
-        padding: 1.25em;
-      }
+        a:hover {
+          .projTitle {
+            color: $secondary-color;
+          }
+        }
 
-      .projInfo {
-        border: $projOutline;
-        border-radius: 0 0 0.25em 0.25em;
-        border-top: white;
-        padding: 1.25em;
-        margin-bottom: 30px;
+        .card-footer {
+          z-index: 2; //needed for following hover to work
+        }
       }
     }
 
-    .otherProjs-container {
-      width: 80%;
-    }
-  }
-}
-
-// Smartphone View
-@media (max-width:480px) {
-  .projects-container {
-    width: 100%;
-    margin-left: 0;
-    //Offset fixed navbar when directing to section
-    padding-top: 4vh;
-    margin-top: 0;
-
-    .sectionTitle {
-      width: 55%;
-    }
-
-    .grid-container-coursework {
-      width: 75%;
-    }
-
-    .otherProjs-container {
-      width: 75%;
+    .projLink {
+      svg:hover {
+        stroke: $secondary-color;
+      }
     }
   }
 }

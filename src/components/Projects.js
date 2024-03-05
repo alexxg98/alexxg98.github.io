@@ -18,9 +18,9 @@ const FeatProjectItem = ({ data }) => (
         <span className="badge badge-dark badge-pill projSoftware"> {software} </span>
       ))}
       <br /><br />
-      <a id="sourceCode" role="button" href={data.url.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
+      <a className="projLink" role="button" href={data.url.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
       {data.url.site !== ''
-        && <a id="demoSite" role="button" href={data.url.site} target="_blank" rel="noopener noreferrer"><ExternalIcon /></a>
+        && <a className="projLink" role="button" href={data.url.site} target="_blank" rel="noopener noreferrer"><ExternalIcon /></a>
       }
     </div>
   </>
@@ -36,9 +36,9 @@ const MoreProjectItem = ({ data }) => (
       <p> {data.projDesc} </p>
     </div>
     <div className="card-footer">
-      <a id="sourceCode" role="button" href={data.url.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
+      <a className="projLink" role="button" href={data.url.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
       {data.url.site !== ''
-        && <a id="demoSite" role="button" href={data.url.site} target="_blank" rel="noopener noreferrer"><ExternalIcon /></a>
+        && <a className="projLink" role="button" href={data.url.site} target="_blank" rel="noopener noreferrer"><ExternalIcon /></a>
       }
     </div>
   </div>
@@ -69,7 +69,7 @@ export default class Projects extends Component {
     return (
 
       <div className="projects-container" id="ProjSec">
-        <span className="sectionTitle">Some things I built</span>
+        <h6 className="sectionTitle">Some things I built</h6>
 
         <FeaturedProjects data={featProjs} />
 

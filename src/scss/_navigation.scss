@@ -2,94 +2,85 @@
 
 /* Navbar */
 .sidenav {
-  height: 100%;
-  width: 150px;
   position: fixed;
   z-index: 3; /*Makes sure the fading-effect box doesn't show ontop*/
-  top: 0;
-  left: 0;
-  background-color: $primary-color;
+  width: 100vw;
+  height: 80px;
   overflow-x: hidden;
-  padding-top: 20px;
-  color: white;
+  background-color: $primary-color;
 
-  #logo_home {
-    padding: 0;
+  img {
+    width: auto;
+  }
 
-    img{
+  .linkto {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    top: 0;
+    right: 0;
+    align-items: center;
+    padding-right: 5px;
+
+    a {
+      padding: 0 6px;
+      text-decoration: none;
+      font-family: $heading-font;
+      font-weight: 400;
+      font-size: 0.75em;
+      color: white;
+    }
+
+    #toHome {
+      visibility: hidden;
+      font-size: 0;
+    }
+
+    #toAbout, #toExp, #toProj {
+      border-right: solid 1px;
+    }
+  }
+}
+
+// Tablet View
+@media (min-width:768px) {
+  .sidenav {
+    height: 100vh;
+    width: 150px;
+    padding-top: 20px;
+
+    img {
       width: 100%;
       height: auto;
       margin-bottom: 20px;
     }
-  }
-
-  .linkto, .backto {
-    a, p {
-      padding: 6px 8px 6px 26px;
-      text-decoration: none;
-      font-family: $heading-font;
-      font-weight: 400;
-      font-size: 1.2em;
-      color: white;
-      display: block;
-    }
-    a:hover {
-      text-decoration: none;
-      color: $secondary-color;
-    }
-  }
-}
-
-// Smartphone View
-@media (max-width:480px) {
-  .sidenav {
-    width: 100%;
-    padding: 0.2em 0;
-    height: auto;
-
-    #logo_home {
-      img{
-        width: 15%;
-        margin-bottom: 0;
-      }
-
-      &::before {
-        content: '';
-      }
-    }
 
     .linkto {
-      padding-right: 1%;
-      padding-top: 2px;
-      top: 25%;
-      right: 0;
-      position: absolute;
-
-      #toHome {
-        visibility: hidden;
-        font-size: 0;
-      }
-      #toAbout, #toExp, #toProj {
-        &::after {
-          content: ' |'
-        }
-      }
+      position: unset;
+      display: grid;
+      height: auto;
 
       a {
-        padding: 6px;
-        font-size: 0.75em;
-        display: inline;
-        text-align: right;
+        padding: 6px 8px 6px 26px;
+        font-size: 1.2em;
+      }
+
+      #toHome {
+        visibility: visible;
+        font-size: 1.2em;
+      }
+
+      #toAbout, #toExp, #toProj {
+        border-right: none;
       }
     }
   }
 }
 
-//Smaller Smartphone View
-@media (max-width:320px) {
-  .sidenav {
-    a {
-      padding: 3px;
+@media (hover: hover) {
+  .sidenav .linkto {
+    a:hover {
+      color: $secondary-color;
     }
   }
 }

@@ -1,225 +1,169 @@
 @import 'variables';
 
 .timeline-contatiner {
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
-  position: relative;
-  margin: 40px 0;
+  width: 85%;
+  margin: 40px auto;
 }
 
 //Display line for timeline
 .timeline-contatiner::after {
-  background-color: $primary-color;
   content: ''; //needed for the line to display
   position: absolute;
-  left: calc(50% - 2px);
+  left: 20px;
   width: 4px;
   height: 100%;
+  background-color: $primary-color;
 }
 
-//Left side/ default of timeline
 .timeline-item {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 30px;
-  position: relative;
   margin: 10px 0;
-  width: 50%;
+  padding-left: 90px;
 
   .timeline-item-content {
+    position: relative;
+    font-family: $primary-font;
+    max-width: 85%;
     box-shadow: 0 0 5px $primary-color;
     border-radius: 5px;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     padding: 15px;
-    position: relative;
-    width: 400px;
-    max-width: 70%;
-    text-align: right;
-    font-family: $primary-font;
 
     &::after {
       content: ' ';
-      background-color: #fff;
-      box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
       position: absolute;
-      right: -7.5px;
-      top: calc(50% - 7.5px);
-      transform: rotate(45deg);
       width: 15px;
       height: 15px;
+      top: calc(50% - 7.5px);
+      left: -9px;
+      transform: rotate(45deg);
+      background-color: #fff;
+      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .circle {
+      z-index: 2;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: calc(50% - 10px);
+      left: -78px;
+      background-color: #fff;
+      border: 3px solid $primary-color;
+      border-radius: 50%;
+    }
+
+    a {
+      color: $primary-color;
+      font-weight: $bold-fontweight;
     }
 
     time {
       color: #777;
       font-size: 12px;
-      font-family: $primary-font;
-      font-weight: $bolder-fontsize;
+      font-weight: $bolder-fontweight;
     }
 
     h6 {
-      line-height: 24px;
       margin: 15px 0;
-      max-width: 390px;
       font-family: $heading-font;
-      font-weight: $bold-fontsize;
       font-size: 1.2em;
-    }
-
-    span {
-      font-size: 0.8em;
-    }
-
-    p {
-      line-height: 24px;
-      margin-bottom: 8px;
-      max-width: 390px;
-      font-weight: $reg-fontsize;
-    }
-
-    a {
-      font-size: 1em;
-      font-weight: bold;
-      color: $primary-color;
-      font-weight: $bold-fontsize;
-
-      &:hover {
-        color: $primary-color;
-        text-decoration: none;
-        font-weight: bolder;
-      }
-    }
-
-    .moreInfo {
-      color: $primary-color;
-      text-align: right;
-      width: 100%;
-      margin: 0px auto;
-      padding: 0;
-      opacity: 0;
-      transition: 0.8s ease;
-      // border: solid red 3px;
-
-      &:after {
-        content: '\00bb';
-      }
-    }
-    &:hover .moreInfo {
-      opacity: 1;
-    }
-
-    .circle {
-      background-color: #fff;
-      border: 3px solid $primary-color;
-      border-radius: 50%;
-      position: absolute;
-      top: calc(50% - 10px);
-      right: -40px;
-      width: 20px;
-      height: 20px;
-      z-index: 2;
-    }
-  }
-}
-
-//Right side of timeline
-.timeline-item:nth-child(odd) {
-  align-self: flex-end;
-  justify-content: flex-start;
-  padding-left: 30px;
-  padding-right: 0;
-
-  .timeline-item-content {
-    text-align: left;
-    align-items: flex-start;
-
-    &::after {
-      right: auto;
-      left: -7.5px;
-      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
-    }
-
-    .circle {
-      right: auto;
-      left: -40px;
-    }
-  }
-}
-
-// Large Tablet View
-@media only screen and (max-width: 1024px) {
-  .timeline-item{
-    .timeline-item-content {
-      max-width: 80%;
-
-      .moreInfo {
-        opacity: 1;
-      }
-    }
-  }
-}
-
-// Tablet View
-@media only screen and (max-width: 768px) {
-  .timeline-item{
-    .timeline-item-content {
-      max-width: 85%;
-    }
-  }
-}
-
-// Smartphone View
-// Change format
-@media only screen and (max-width: 480px) {
-  //Timeline bar
-  .timeline-contatiner::after {
-    left: 40px;
-  }
-
-  //Left side/ default of timeline
-  .timeline-item {
-    display: block;
-    padding-left: 90px;
-    padding-right: 0;
-    width: 100%;
-    align-items: flex-start;
-
-    .timeline-item-content {
-      text-align: left;
-      align-items: flex-start;
-      max-width: 90%;
-
-      .circle {
-        right: auto;
-        left: -58px;
-      }
 
       span {
         font-size: 0.8em;
       }
     }
 
-    .timeline-item-content::after {
-      right: auto;
-      left: -9px;
-      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+    .expOverview {
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+
+    .moreInfo {
+      color: $primary-color;
+      text-align: right;
+      margin: 0px auto;
+
+      &:after {
+        content: ' \00bb';
+      }
+    }
+  }
+}
+
+// Tablet View
+@media (min-width:768px) {
+  .timeline-contatiner {
+    width: 85%;
+  }
+
+  //Display line for timeline
+  .timeline-contatiner::after {
+    left: calc(50%);
+  }
+  
+  //Left side/ default of timeline
+  .timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 50%;
+    padding: 0 30px 0 0;
+    
+    .timeline-item-content {
+      max-width: 100%;
+      &::after {
+        left: auto;
+        right: -7.5px;
+        box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+      }
+
+      .circle {
+        left: calc(100% + 22px);
+      }
     }
   }
 
   //Right side of timeline
   .timeline-item:nth-child(odd) {
-    padding-left: 90px;
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 0 30px;
 
     .timeline-item-content {
       text-align: left;
-      margin-right: 0;
+
+      &::after {
+        right: auto;
+        left: -7.5px;
+        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+      }
 
       .circle {
         right: auto;
-        left: -58px;
+        left: -37px;
       }
+    }
+  }
+}
+
+@media (hover: hover) {
+  .timeline-item {
+    a:hover {
+      color: $primary-color;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+
+    .moreInfo {
+      opacity: 0;
+      transition: 0.8s ease;
+    }
+
+    &:hover .moreInfo {
+      opacity: 1;
     }
   }
 }
